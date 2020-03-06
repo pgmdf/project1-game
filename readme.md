@@ -2,7 +2,7 @@
 
 **Short description**
 
-The first project in the Ironhack WebDevPT course should be a game. I decide to built one that adopts the general gameplay of the card game "Quartett". 
+The first project in the Ironhack WebDevPT course should be a game. I decided to build one that adopts the general gameplay of the card game "Quartett". 
 
 ## General Tasks
 
