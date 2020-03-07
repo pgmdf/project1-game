@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/dd87b5950b.js" crossorigin="anonymous"></script>
+    <!-- individual styles -->
     <link rel="stylesheet" href="../css/main.css">
     <title>Project 1</title>
 </head>
+
 <body>
-    
+    <main>
+        <section id="meta-game-information" class="container">
+            <div class="col-xs-12 pl-2 pr-2 mt-4 d-flex flex-row">
+                <i class="fas fa-gamepad fa-2x"></i>
+                <p class="pl-2 pr-2">Some text to test the grid. and its flow... to the next row... oh, I'm tending to be a poet.</p>
+                <i class="fas fa-question fa-2x"></i>
+                
+            </div>
+        </section>
+        <section id="game-section" class="container">
+            <div class="col-xs-12 pl-2 pr-2"><img
+                    src="https://dummyimage.com/600x400/000000/FFFFFF.png?text=KindOfTransport" alt=""
+                    class="img-fluid" />
+            </div>
+            <div class="col-xs-12 pl-2 pr-2 d-flex flex-column">
+                <button id="key-value-1" class="btn btn-light mt-2 mb-2">1st key value to be compared</button>
+                <button id="key-value-2" class="btn btn-success mt-2 mb-2">2nd key value to be compared</button>
+                <button id="key-value-3" class="btn btn-light mt-2 mb-2">3rd key value to be compared</button>
+                <button id="key-value-submit" class="btn btn-warning mt-2 mb-2">Confirm your choice / Submit / Play</button>
+            </div>
+        </section>
+    </main>
     <script type="text/javascript" src="../js/gamelogic.js"></script>
 </body>
+
 </html>
