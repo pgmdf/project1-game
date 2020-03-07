@@ -87,3 +87,4 @@ function checkWinnerEnergy() {
     updateMetaGame()
 }
 
+pickRandomCards()
