@@ -3,32 +3,60 @@
 
 
 let state = {
-    key1: false,
-    key2: false
+  key1: false,
+  key2: false
 }
 
-document.getElementById('key-value-1').onclick = () => {
-    document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
-    document.getElementById('key-value-1').className = "btn btn-secondary mt-2 mb-2"
-    state.key1 = true
-  };
 
-  document.getElementById('key-value-2').onclick = () => {
-    document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
-    document.getElementById('key-value-2').className = "btn btn-secondary mt-2 mb-2"
-    state.key2 = true
-  };  
+// TODO: restrict to only one key value to be picked
+
+document.getElementById('key-value-1').onclick = () => {
+  document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
+  document.getElementById('key-value-1').className = "btn btn-secondary mt-2 mb-2"
+  state.key1 = true
+};
+
+document.getElementById('key-value-2').onclick = () => {
+  document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
+  document.getElementById('key-value-2').className = "btn btn-secondary mt-2 mb-2"
+  state.key2 = true
+};
 
 
 // testing button onclick -> do console.log maybe two buttons clicked are hard to follow
 document.getElementById('key-value-submit').onclick = () => {
 
-    if (!state.key1) {
-    checkWinnerVelocity();}
-    if (!state.key2) {
-    checkWinnerEnergy();}
+  if (state.key1) {
+    document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-2 mb-2"
+    checkWinnerVelocity();
+    document.getElementById('key-value-1').className = "btn btn-light mt-2 mb-2"
+  }
+  if (state.key2) {
+    document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-2 mb-2"
+    checkWinnerEnergy();
+    document.getElementById('key-value-2').className = "btn btn-light mt-2 mb-2"
+  }
 
-    // start with a new card
-    // TODO: find end of the game, so exit if card deck = 0
+  // remove played cards  
+  console.log("userCards.length before shift(): " + userCards.length)
+  userCards.shift()
+  console.log("userCards.length after shift(): " + userCards.length)
+  computerCards.shift()
+
+  // reset key-value-button state  
+  state.key1 = false
+  state.key2 = false
+
+  // reset submit-button 
+  document.getElementById('key-value-submit').className = "btn btn-warning mt-2 mb-2"
+
+  // start with a new card
+  // TODO: find end of the game, so exit if card deck = 0
+  // TODO: another function needed to count down one cards array
+  if (userCards.length > 0) {
     pickRandomCards()
-  };
+  }
+  else {
+    console.log("game finished")
+  }
+};
