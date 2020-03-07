@@ -7,25 +7,25 @@ console.log("Here we go")
 // name, img, mystery category
 // followed by key values that should be compared
 class Card {
-    constructor(name, img, category, cardindex, velocity, energy) {
+    constructor(name, img, category, cardindex, keyvalue1, keyvalue2) {
         this.name = name
         this.img = img
         this.category = category
         this.cardindex = cardindex
-        this.velocity = velocity
-        this.energy = energy
+        this.keyvalue1 = keyvalue1
+        this.keyvalue2 = keyvalue2
     }
 
 
     // NEW KEY VALUES TO ADD HERE
-    // velocity method
-    velocity() {
-        return this.velocity
+    // keyvalue1 method
+    keyvalue1() {
+        return this.keyvalue1
     }
 
-    // energy method
-    energy() {
-        return this.energy
+    // keyvalue2 method
+    keyvalue2() {
+        return this.keyvalue2
     }
 
 }
@@ -80,9 +80,9 @@ function checkWinnerVelocity() {
 function checkWinnerEnergy() {
     if (userCards[0].energy < computerCards[0].energy) {
         // count score up or down
-        computerScore += 5
+        computerScore += 3
     } else {
-        userScore += 5
+        userScore += 3
     }
     updateMetaGame()
 }

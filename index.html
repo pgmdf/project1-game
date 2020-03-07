@@ -17,7 +17,12 @@
 
 <body>
     <h1 class="sr-only">Future Transport Quartet/Card game</h1>
-    <main>
+    <!-- START SCREEN - will disappear after button click -->
+    <div id="start-screen" class="container d-flex col-xs-12 justify-content-center align-items-center visible">
+        <button id="start-game-button" type="button" class="btn btn-primary">Start game!</button>
+    </div>
+    <!-- GAME SCREEN -->
+    <main class="invisible">
         <section id="meta-game-information" class="container">
             <div class="col-xs-12 pl-2 pr-2 mt-2 d-flex flex-row justify-content-between align-items-center">
                 <div class="flex-column">
