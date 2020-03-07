@@ -87,4 +87,4 @@ function checkWinnerEnergy() {
     updateMetaGame()
 }
 
-pickRandomCards()
+document.body.onload() = pickRandomCards()
