@@ -18,4 +18,5 @@ The first project in the Ironhack WebDevPT course should be a game. I decided to
 10. Stick with KISS (Keep It Simple Stupid) and DRY (Don’t Repeat Yourself) principles.
 
 ## Tracking of progress
+[Github-Project](https://github.com/pgmdf/project1-game/projects/1)
 
