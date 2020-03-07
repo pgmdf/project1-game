@@ -86,3 +86,4 @@ function checkWinnerEnergy() {
     }
     updateMetaGame()
 }
+
