@@ -50,11 +50,9 @@ document.getElementById('key-value-submit').onclick = () => {
   // reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-warning mt-2 mb-2"
 
-  // start with a new card
-  // TODO: find end of the game, so exit if card deck = 0
-  // TODO: another function needed to count down one cards array
+  // load new user card as long as there are cards left
   if (userCards.length > 0) {
-    pickRandomCards()
+    startGame()
   }
   else {
     console.log("game finished")
