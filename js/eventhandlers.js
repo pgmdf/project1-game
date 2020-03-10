@@ -51,10 +51,18 @@ document.getElementById('key-value-submit').onclick = () => {
   document.getElementById('key-value-submit').className = "btn btn-warning mt-2 mb-2"
 
   // load new user card as long as there are cards left
+  // SOLVED: find end of the game, so exit if card deck = 0
+  // SOLVED: another function needed to count down one cards array
   if (userCards.length > 0) {
     startGame()
   }
   else {
-    console.log("game finished")
+    // TODO: nicer endscreen and a message fitting to the theme / character of the game
+    if (userScore > computerScore) {
+      console.log("You win!")
+    }
+    else {
+      console.log("Computer wins, better try next time!")
+    }
   }
 };
