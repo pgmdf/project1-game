@@ -27,6 +27,7 @@ function updateMetaGame() {
 }
 
 // display the actual card to play 
+// TODO: add transition/animation to the card
 function startGame() {
     document.getElementById('transport-name').innerText = `${userCards[0].name}`
     document.getElementById('key-value-1').innerHTML = '<i class="fas fa-stopwatch fa-2x pr-4"></i>' + `${userCards[0].velocity}`

@@ -50,18 +50,19 @@ document.getElementById('key-value-submit').onclick = () => {
   // reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-warning mt-2 mb-2"
 
+  // test for transition - adding transition
+  document.getElementsByClassName('transition-test')[0].classList.add('new-card')
+
   // load new user card as long as there are cards left
   // SOLVED: find end of the game, so exit if card deck = 0
   // SOLVED: another function needed to count down one cards array
   if (userCards.length > 0) {
     startGame()
-  }
-  else {
+  } else {
     // TODO: nicer endscreen and a message fitting to the theme / character of the game
     if (userScore > computerScore) {
       console.log("You win!")
-    }
-    else {
+    } else {
       console.log("Computer wins, better try next time!")
     }
   }

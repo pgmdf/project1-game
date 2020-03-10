@@ -32,7 +32,7 @@ class Card {
 
 
 
-let userCards 
+let userCards
 let userScore = 0
 let computerCards
 let computerScore = 0
@@ -48,7 +48,7 @@ function pickRandomCards() {
         userCards.push(chosenCard)
     }
     console.log(userCards)
-    console.log(computerCards)  
+    console.log(computerCards)
 
     startGame()
     updateMetaGame()
@@ -80,10 +80,13 @@ function checkWinnerVelocity() {
 function checkWinnerEnergy() {
     if (userCards[0].energy < computerCards[0].energy) {
         // count score up or down
+        // TODO: end of transition needed; test for transition - adding transition
+        document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 3
     } else {
+        // TODO: end of transition needed; test for transition - adding transition
+        document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 3
     }
     updateMetaGame()
 }
-
