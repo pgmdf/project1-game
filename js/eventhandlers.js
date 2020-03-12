@@ -53,6 +53,9 @@ document.getElementById('key-value-submit').onclick = () => {
   // test for transition - adding transition
   document.getElementsByClassName('transition-test')[0].classList.add('new-card')
 
+ 
+
+
   // load new user card as long as there are cards left
   // SOLVED: find end of the game, so exit if card deck = 0
   // SOLVED: another function needed to count down one cards array
@@ -67,3 +70,13 @@ document.getElementById('key-value-submit').onclick = () => {
     }
   }
 };
+
+
+ // flip image to show which card computer is playing 
+  // TODO: rename transport-img to open the game for more decks
+  document.getElementById('transport-img').onclick = () => { 
+    console.log("onclick on picture works")
+    document.getElementById('transport-img').src= `${computerCards[0].imgFile}`
+    //transition to get back to origin
+    //document.getElementById('transport-img').src= `${userCards[0].imgFile}`
+  }; 

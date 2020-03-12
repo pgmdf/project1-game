@@ -29,6 +29,7 @@ function updateMetaGame() {
 // display the actual card to play 
 // TODO: add transition/animation to the card
 function startGame() {
+    document.getElementById('transport-img').src= `${userCards[0].imgFile}`
     document.getElementById('transport-name').innerText = `${userCards[0].name}`
     document.getElementById('key-value-1').innerHTML = '<i class="fas fa-stopwatch fa-2x pr-4"></i>' + `${userCards[0].velocity}`
     document.getElementById('key-value-2').innerHTML = '<i class="fas fa-fire fa-2x pr-4"></i>' + `${userCards[0].energy}`

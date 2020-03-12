@@ -38,6 +38,9 @@ Temporary Items
 !.vscode/launch.json
 !.vscode/extensions.json
 
+### Reserve Folder ###
+reserved_copies_200311
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history

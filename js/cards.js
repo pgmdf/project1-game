@@ -1,11 +1,13 @@
 // author: github.com/pgmdf
 /* only the cards array */
 
+// TODO: switch property imgURL to imgFile to let it work with "local" images
+
 let cardsArray = [
     // SUV
     {
         name: "SUV",
-        img: "",
+        imgFile: '../images/dummypic1.png',
         category: "dark side",
         cardindex: 1,
         velocity: 48,
@@ -15,7 +17,7 @@ let cardsArray = [
     // SUP
     {
         name: "SUP",
-        img: "",
+        imgFile: '../images/dummypic2.png',
         category: "green side",
         cardindex: 2,
         velocity: 8,
@@ -25,7 +27,7 @@ let cardsArray = [
     // Walking
     {
         name: "Walking",
-        img: "",
+        imgFile: '../images/dummypic3.png',
         category: "green side",
         cardindex: 3,
         velocity: 6,
@@ -35,7 +37,7 @@ let cardsArray = [
     // Drone
     {
         name: "Drone",
-        img: "",
+        imgFile: '../images/dummypic4.png',
         category: "invisible side",
         cardindex: 4,
         velocity: 60,
@@ -44,7 +46,7 @@ let cardsArray = [
     // Bicycle
     {
         name: "Bicycle",
-        img: "",
+        imgFile: '../images/dummypic5.png',
         category: "green side",
         cardindex: 3,
         velocity: 18,
@@ -53,7 +55,7 @@ let cardsArray = [
     // Subway
     {
         name: "Subway",
-        img: "",
+        imgFile: '../images/dummypic6.png',
         category: "green side",
         cardindex: 3,
         velocity: 20,

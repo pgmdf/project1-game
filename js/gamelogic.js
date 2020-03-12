@@ -1,21 +1,38 @@
 // author: github.com/pgmdf
 /* gamelogic - all classes and functions needed to play the game */
 
-console.log("Here we go")
-
 // set up structure of a card
 // name, img, mystery category
 // followed by key values that should be compared
 class Card {
-    constructor(name, img, category, cardindex, keyvalue1, keyvalue2) {
+
+    // properties that are individual for every single card
+    // attributes //=> [{ name: 'velocity', value: 123 }, { name: 'energy', value: 665 }]
+    constructor(name, img, category, cardindex, attributes) {
         this.name = name
         this.img = img
         this.category = category
+        this.attributes = attributes
         this.cardindex = cardindex
+        this.keyname1 = keyname1
         this.keyvalue1 = keyvalue1
+        this.keyname2 = keyname2
         this.keyvalue2 = keyvalue2
+        this.keyname3 = keyname3
+        this.keyvalue3 = keyvalue3
+        this.keyname4 = keyname4
+        this.keyvalue4 = keyvalue4
+        this.keyname5 = keyname5
+        this.keyvalue5 = keyvalue5
+        this.keyname6 = keyname6
+        this.keyvalue6 = keyvalue6
     }
 
+    // properties that are individual for a specific card deck
+    compareAttribute(attributeIdx) {
+        return this.attributes[attributeIdx].value
+    }
+    
 
     // NEW KEY VALUES TO ADD HERE
     // keyvalue1 method
@@ -66,6 +83,7 @@ function pickRandomCards() {
 // winner functions
 function checkWinnerVelocity() {
     console.log(userCards[0])
+    //if (userCards[0].compareAttribute(0) < computerCards[0].compareAttribute(0)) {
     if (userCards[0].velocity < computerCards[0].velocity) {
         // count score up or down
         computerScore += 5
