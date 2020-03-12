@@ -7,7 +7,7 @@ let cardsArray = [
     // SUV
     {
         name: "SUV",
-        imgFile: 'project1-game/images/dummypic1.png',
+        imgFile: '../images/dummypic1.png',
         category: "dark side",
         cardindex: 1,
         velocity: 48,
@@ -17,7 +17,7 @@ let cardsArray = [
     // SUP
     {
         name: "SUP",
-        imgFile: 'project1-game/images/dummypic2.png',
+        imgFile: '../images/dummypic2.png',
         category: "green side",
         cardindex: 2,
         velocity: 8,
@@ -27,7 +27,7 @@ let cardsArray = [
     // Walking
     {
         name: "Walking",
-        imgFile: 'project1-game/images/dummypic3.png',
+        imgFile: '../images/dummypic3.png',
         category: "green side",
         cardindex: 3,
         velocity: 6,
@@ -37,7 +37,7 @@ let cardsArray = [
     // Drone
     {
         name: "Drone",
-        imgFile: 'project1-game/images/dummypic4.png',
+        imgFile: '../images/dummypic4.png',
         category: "invisible side",
         cardindex: 4,
         velocity: 60,
@@ -46,7 +46,7 @@ let cardsArray = [
     // Bicycle
     {
         name: "Bicycle",
-        imgFile: 'project1-game/images/dummypic5.png',
+        imgFile: '../images/dummypic5.png',
         category: "green side",
         cardindex: 3,
         velocity: 18,
@@ -55,7 +55,7 @@ let cardsArray = [
     // Subway
     {
         name: "Subway",
-        imgFile: 'project1-game/images/dummypic6.png',
+        imgFile: '../images/dummypic6.png',
         category: "green side",
         cardindex: 3,
         velocity: 20,
