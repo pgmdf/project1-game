@@ -1,9 +1,10 @@
 // author: github.com/pgmdf
-/* gamelogic - all classes and functions needed to play the game */
 
-// set up structure of a card
-// name, img, mystery category
-// followed by key values that should be compared
+/* GAMELOGIC:   all classes and functions needed to play the game
+                set up structure of a card
+                name, img, mystery category
+                followed by key values that should be compared */
+
 class Card {
 
     // properties that are individual for every single card
@@ -54,19 +55,15 @@ let userScore = 0
 let computerCards
 let computerScore = 0
 
-// randomized card decks: computer and user
+// GAMELOGIC: randomized card decks: computer and user
 function pickRandomCards() {
     computerCards = [...cardsArray] // copy
     userCards = []
     for (let i = 0; i < cardsArray.length / 2; i++) {
         let ind = Math.floor(Math.random() * computerCards.length)
         let chosenCard = computerCards.splice(ind, 1)[0]
-        // console.log("chosenCard", chosenCard)
         userCards.push(chosenCard)
     }
-    console.log(userCards)
-    console.log(computerCards)
-
     startGame()
     updateMetaGame()
 }

@@ -23,6 +23,7 @@ document.getElementById('key-value-2').onclick = () => {
 };
 
 
+// UXUI: 
 // testing button onclick -> do console.log maybe two buttons clicked are hard to follow
 document.getElementById('key-value-submit').onclick = () => {
 
@@ -37,10 +38,10 @@ document.getElementById('key-value-submit').onclick = () => {
     document.getElementById('key-value-2').className = "btn btn-light mt-2 mb-2"
   }
 
-  // remove played cards  
-  console.log("userCards.length before shift(): " + userCards.length)
+  // GAMELOGIC: remove played cards  
+  //console.log("userCards.length before shift(): " + userCards.length)
   userCards.shift()
-  console.log("userCards.length after shift(): " + userCards.length)
+  //console.log("userCards.length after shift(): " + userCards.length)
   computerCards.shift()
 
   // reset key-value-button state  
@@ -52,9 +53,6 @@ document.getElementById('key-value-submit').onclick = () => {
 
   // test for transition - adding transition
   document.getElementsByClassName('transition-test')[0].classList.add('new-card')
-
- 
-
 
   // load new user card as long as there are cards left
   // SOLVED: find end of the game, so exit if card deck = 0
@@ -72,8 +70,8 @@ document.getElementById('key-value-submit').onclick = () => {
 };
 
 
- // flip image to show which card computer is playing 
-  // TODO: rename transport-img to open the game for more decks
+// UXUI: flip image to show which card computer is playing 
+// TODO: rename transport-img to open the game for more decks
   document.getElementById('transport-img').onclick = () => { 
     console.log("onclick on picture works")
     document.getElementById('transport-img').src= `${computerCards[0].imgFile}`
