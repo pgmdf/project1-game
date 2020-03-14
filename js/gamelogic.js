@@ -98,10 +98,12 @@ function checkWinnerEnergy() {
         // TODO: end of transition needed; test for transition - adding transition
         document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 3
+        document.getElementsByClassName('computer-score')[0].classList.remove('score-up')
     } else {
         // TODO: end of transition needed; test for transition - adding transition
         document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 3
+        document.getElementsByClassName('user-score')[0].classList.remove('score-up')
     }
     updateMetaGame()
 }

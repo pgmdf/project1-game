@@ -11,14 +11,14 @@ let state = {
 // TODO: restrict to only one key value to be picked
 
 document.getElementById('key-value-1').onclick = () => {
-  document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
-  document.getElementById('key-value-1').className = "btn btn-secondary mt-2 mb-2"
+  document.getElementById('key-value-submit').className = "btn btn-success mt-1 mb-1"
+  document.getElementById('key-value-1').className = "btn btn-secondary mt-1 mb-1"
   state.key1 = true
 };
 
 document.getElementById('key-value-2').onclick = () => {
-  document.getElementById('key-value-submit').className = "btn btn-success mt-2 mb-2"
-  document.getElementById('key-value-2').className = "btn btn-secondary mt-2 mb-2"
+  document.getElementById('key-value-submit').className = "btn btn-success mt-1 mb-1"
+  document.getElementById('key-value-2').className = "btn btn-secondary mt-1 mb-1"
   state.key2 = true
 };
 
@@ -28,20 +28,20 @@ document.getElementById('key-value-2').onclick = () => {
 document.getElementById('key-value-submit').onclick = () => {
 
   if (state.key1) {
-    document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-2 mb-2"
+    document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerVelocity();
-    document.getElementById('key-value-1').className = "btn btn-light mt-2 mb-2"
+    document.getElementById('key-value-1').className = "btn btn-light mt-1 mb-1"
   }
   if (state.key2) {
-    document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-2 mb-2"
+    document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerEnergy();
-    document.getElementById('key-value-2').className = "btn btn-light mt-2 mb-2"
+    document.getElementById('key-value-2').className = "btn btn-light mt-1 mb-1"
   }
 
   // GAMELOGIC: remove played cards  
-  //console.log("userCards.length before shift(): " + userCards.length)
+  console.log("userCards.length before shift(): " + userCards.length)
   userCards.shift()
-  //console.log("userCards.length after shift(): " + userCards.length)
+  console.log("userCards.length after shift(): " + userCards.length)
   computerCards.shift()
 
   // reset key-value-button state  
@@ -49,7 +49,7 @@ document.getElementById('key-value-submit').onclick = () => {
   state.key2 = false
 
   // reset submit-button 
-  document.getElementById('key-value-submit').className = "btn btn-warning mt-2 mb-2"
+  document.getElementById('key-value-submit').className = "btn btn-warning mt-1 mb-1"
 
   // test for transition - adding transition
   document.getElementsByClassName('transition-test')[0].classList.add('new-card')
@@ -71,10 +71,10 @@ document.getElementById('key-value-submit').onclick = () => {
 
 
 // UXUI: flip image to show which card computer is playing 
-// TODO: rename transport-img to open the game for more decks
-  document.getElementById('transport-img').onclick = () => { 
+// SOLVED: rename transport-img to open the game for more decks
+  document.getElementById('card-img').onclick = () => { 
     console.log("onclick on picture works")
-    document.getElementById('transport-img').src= `${computerCards[0].imgFile}`
+    document.getElementById('card-img').src= `${computerCards[0].imgFile}`
     //transition to get back to origin
-    //document.getElementById('transport-img').src= `${userCards[0].imgFile}`
+    //document.getElementById('card-img').src= `${userCards[0].imgFile}`
   }; 

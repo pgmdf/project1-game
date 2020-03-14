@@ -2,6 +2,7 @@
 /* only the cards array */
 
 // TODO: switch property imgURL to imgFile to let it work with "local" images
+// had to use absolute path and url to make it work with github-pages
 
 let cardsArray = [
     // SUV
@@ -10,8 +11,10 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic1.png',
         category: "dark side",
         cardindex: 1,
-        velocity: 48,
-        energy: 20
+        keyname1: "velocity",
+        keyvalue1: 48,
+        keyname2: "energy",
+        keyvalue2: 20
     },
 
     // SUP
@@ -20,8 +23,10 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic2.png',
         category: "green side",
         cardindex: 2,
-        velocity: 8,
-        energy: 500
+        keyname1: "velocity",
+        keyvalue1: 8,
+        keyname2: "energy",
+        keyvalue2: 500
     },
 
     // Walking
@@ -30,8 +35,10 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic3.png',
         category: "green side",
         cardindex: 3,
-        velocity: 6,
-        energy: 500
+        keyname1: "velocity",
+        keyvalue1: 6,
+        keyname2: "energy",
+        keyvalue2: 400
     },
 
     // Drone
@@ -40,8 +47,10 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic4.png',
         category: "invisible side",
         cardindex: 4,
-        velocity: 60,
-        energy: 1000
+        keyname1: "velocity",
+        keyvalue1: 60,
+        keyname2: "energy",
+        keyvalue2: 1000
     },
     // Bicycle
     {
@@ -49,8 +58,10 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic5.png',
         category: "green side",
         cardindex: 3,
-        velocity: 18,
-        energy: 600
+        keyname1: "velocity",
+        keyvalue1: 18,
+        keyname2: "energy",
+        keyvalue2: 600
     },
     // Subway
     {
@@ -58,7 +69,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic6.png',
         category: "green side",
         cardindex: 3,
-        velocity: 20,
-        energy: 0
+        keyname1: "velocity",
+        keyvalue1: 20,
+        keyname2: "energy",
+        keyvalue2: 0
     }
 ]
