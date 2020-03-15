@@ -39,3 +39,9 @@ function startGame() {
     document.getElementById('key-value-5').innerHTML = '<div class="row justify-content-around pr-5 pl-5">' + '<div>' + `${userCards[0].keyname5}:` + '</div>' + '<div>' + `${userCards[0].keyvalue5}` + '</div>' + '</div>'
 }
 
+// switch to instructions
+document.getElementById('help').onclick = () => {
+    document.getElementById('instructions').className = "visible"
+    //document.getElementById('instructions').remove()
+};
+

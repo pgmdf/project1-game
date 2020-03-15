@@ -45,27 +45,27 @@ document.getElementById('key-value-submit').onclick = () => {
   if (clickedButton == "key-value-1") {
     document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue1();
-    document.getElementById('key-value-1').className = "btn btn-light mt-1 mb-1"
+    document.getElementById('key-value-1').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-2") {
     document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue2();
-    document.getElementById('key-value-2').className = "btn btn-light mt-1 mb-1"
+    document.getElementById('key-value-2').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-3") {
     document.getElementById('key-value-3').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue3();
-    document.getElementById('key-value-3').className = "btn btn-light mt-1 mb-1"
+    document.getElementById('key-value-3').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-4") {
     document.getElementById('key-value-4').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue4();
-    document.getElementById('key-value-4').className = "btn btn-light mt-1 mb-1"
+    document.getElementById('key-value-4').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-5") {
     document.getElementById('key-value-5').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue5();
-    document.getElementById('key-value-5').className = "btn btn-light mt-1 mb-1"
+    document.getElementById('key-value-5').className = "btn btn-pgmdf mt-1 mb-1"
   }
 
   // GAMELOGIC: remove played cards  
@@ -75,7 +75,7 @@ document.getElementById('key-value-submit').onclick = () => {
   computerCards.shift()
 
   // reset submit-button 
-  document.getElementById('key-value-submit').className = "btn btn-warning mt-1 mb-1"
+  document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
 
   // test for transition - adding transition
   //document.getElementsByClassName('transition-test')[0].classList.add('new-card')
@@ -89,8 +89,11 @@ document.getElementById('key-value-submit').onclick = () => {
     // TODO: nicer endscreen and a message fitting to the theme / character of the game
     if (userScore > computerScore) {
       console.log("You win!")
-    } else {
+    } else if (userScore < computerScore) {
       console.log("Computer wins, better try next time!")
+    }
+    else {
+      console.log("Congrats, you both are winners!")
     }
   }
 };
