@@ -73,3 +73,14 @@ body {
     color: red;
     font-size: 0.5rem;
 }
+
+/* Imitate a pressed effect for buttons */
+.btn:active {
+    top: 5px;
+    box-shadow: none;
+  }
+
+  .btn:inactive {
+    top: 0px;
+    box-shadow: none;
+  }  

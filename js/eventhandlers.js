@@ -1,41 +1,71 @@
 // author: github.com/pgmdf
 /* all eventhandlers */
 
+// define button to be used for comparison
+let clickedButton = " "
 
-let state = {
-  key1: false,
-  key2: false
+// looping through buttons
+
+// Get the container element
+let btnContainer = document.getElementById("buttons")
+
+// Get all buttons with class="btn" inside the container
+let btns = btnContainer.getElementsByClassName("btn")
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    let current = document.getElementsByClassName("active")
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active"
+  });
+
+  // function to identify clicked button
+  function reply_click(clicked_id)
+  {
+      clickedButton = clicked_id
+
+      // change appearance of submit-button
+      if (clickedButton != " ") {
+        document.getElementById('key-value-submit').className = "btn btn-success mt-1 mb-1"
+      }
+  }
 }
 
-
-// TODO: restrict to only one key value to be picked
-
-document.getElementById('key-value-1').onclick = () => {
-  document.getElementById('key-value-submit').className = "btn btn-success mt-1 mb-1"
-  document.getElementById('key-value-1').className = "btn btn-secondary mt-1 mb-1"
-  state.key1 = true
-};
-
-document.getElementById('key-value-2').onclick = () => {
-  document.getElementById('key-value-submit').className = "btn btn-success mt-1 mb-1"
-  document.getElementById('key-value-2').className = "btn btn-secondary mt-1 mb-1"
-  state.key2 = true
-};
-
-
-// UXUI: 
-// testing button onclick -> do console.log maybe two buttons clicked are hard to follow
+  
+// submit your choice and play the game aka call the functions
 document.getElementById('key-value-submit').onclick = () => {
 
-  if (state.key1) {
+  if (clickedButton == "key-value-1") {
     document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-1 mb-1"
-    checkWinnerVelocity();
+    checkWinnerKeyValue1();
     document.getElementById('key-value-1').className = "btn btn-light mt-1 mb-1"
   }
-  if (state.key2) {
+  if (clickedButton == "key-value-2") {
     document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-1 mb-1"
-    checkWinnerEnergy();
+    checkWinnerKeyValue2();
     document.getElementById('key-value-2').className = "btn btn-light mt-1 mb-1"
+  }
+  if (clickedButton == "key-value-3") {
+    document.getElementById('key-value-3').className = "btn btn-outline-secondary mt-1 mb-1"
+    checkWinnerKeyValue3();
+    document.getElementById('key-value-3').className = "btn btn-light mt-1 mb-1"
+  }
+  if (clickedButton == "key-value-4") {
+    document.getElementById('key-value-4').className = "btn btn-outline-secondary mt-1 mb-1"
+    checkWinnerKeyValue4();
+    document.getElementById('key-value-4').className = "btn btn-light mt-1 mb-1"
+  }
+  if (clickedButton == "key-value-5") {
+    document.getElementById('key-value-5').className = "btn btn-outline-secondary mt-1 mb-1"
+    checkWinnerKeyValue5();
+    document.getElementById('key-value-5').className = "btn btn-light mt-1 mb-1"
   }
 
   // GAMELOGIC: remove played cards  
@@ -44,15 +74,11 @@ document.getElementById('key-value-submit').onclick = () => {
   console.log("userCards.length after shift(): " + userCards.length)
   computerCards.shift()
 
-  // reset key-value-button state  
-  state.key1 = false
-  state.key2 = false
-
   // reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-warning mt-1 mb-1"
 
   // test for transition - adding transition
-  document.getElementsByClassName('transition-test')[0].classList.add('new-card')
+  //document.getElementsByClassName('transition-test')[0].classList.add('new-card')
 
   // load new user card as long as there are cards left
   // SOLVED: find end of the game, so exit if card deck = 0
@@ -72,9 +98,9 @@ document.getElementById('key-value-submit').onclick = () => {
 
 // UXUI: flip image to show which card computer is playing 
 // SOLVED: rename transport-img to open the game for more decks
-  document.getElementById('card-img').onclick = () => { 
-    console.log("onclick on picture works")
-    document.getElementById('card-img').src= `${computerCards[0].imgFile}`
-    //transition to get back to origin
-    //document.getElementById('card-img').src= `${userCards[0].imgFile}`
-  }; 
+document.getElementById('card-img').onclick = () => {
+  console.log("onclick on picture works")
+  document.getElementById('card-img').src = `${computerCards[0].imgFile}`
+  //transition to get back to origin
+  //document.getElementById('card-img').src= `${userCards[0].imgFile}`
+};

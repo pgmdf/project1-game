@@ -11,9 +11,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic1.png',
         category: "dark side",
         cardindex: 1,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 48,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 20
     },
 
@@ -23,9 +23,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic2.png',
         category: "green side",
         cardindex: 2,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 8,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 500
     },
 
@@ -35,9 +35,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic3.png',
         category: "green side",
         cardindex: 3,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 6,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 400
     },
 
@@ -47,9 +47,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic4.png',
         category: "invisible side",
         cardindex: 4,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 60,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 1000
     },
     // Bicycle
@@ -58,9 +58,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic5.png',
         category: "green side",
         cardindex: 3,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 18,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 600
     },
     // Subway
@@ -69,9 +69,9 @@ let cardsArray = [
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic6.png',
         category: "green side",
         cardindex: 3,
-        keyname1: "velocity",
+        keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy",
+        keyname2: "energy in kcal",
         keyvalue2: 0
     }
 ]
