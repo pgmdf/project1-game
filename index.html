@@ -24,7 +24,29 @@
     <!-- GAME SCREEN -->
     <main class="invisible">
         <!-- HELP SCREEN -->
-        <p id="instructions" class="invisible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, vel commodi. Similique, rerum sequi? Doloremque ipsam corporis fuga veniam architecto. Rerum facere placeat magnam, a culpa aliquam accusantium ea dolorem!</p>
+        <div id="instructions" class="container overlay">
+            <div class="col-xs-12 pl-3 pr-3 pt-3 d-flex flex-column">
+                <div class="flex-row align-self-center"><i id="close" class="fa fa-window-close fa-lg" aria-hidden="true"></i></div>
+                <div class="flex-row mt-3 align-items-flexstart">
+                    <ol>
+                        <li>Pick a criteria</li>
+                        <li>Submit your choice</li>
+                        <li>Beat your opponent</li>
+                        <li>Choose wisely</li>
+                        <li>Good luck!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- ENDSCREEN -->
+        <div id="the-winner-is" class="container endscreen">
+            <div class="col-xs-12 pl-3 pr-3 pt-3 d-flex flex-column align-items-flexstart">
+                <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
+                    
+                </div>
+                <div id="play-again" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3" aria-hidden="true"></i>Play again!</div>
+            </div>
+        </div>
         <!-- SCORES AND HELP -->
         <section id="meta-game-information" class="container">
             <div class="col-xs-12 pl-2 pr-2 mt-2 d-flex flex-row justify-content-between align-items-center">
@@ -53,7 +75,7 @@
                 <button id="key-value-5" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
             </div>
             <div class="col-xs-12 pl-2 pr-2 d-flex flex-column">
-            <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
+                <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
             </div>
         </section>
     </main>

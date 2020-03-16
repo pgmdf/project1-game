@@ -88,12 +88,18 @@ document.getElementById('key-value-submit').onclick = () => {
   } else {
     // TODO: nicer endscreen and a message fitting to the theme / character of the game
     if (userScore > computerScore) {
-      console.log("You win!")
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
     } else if (userScore < computerScore) {
-      console.log("Computer wins, better try next time!")
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
     }
     else {
-      console.log("Congrats, you both are winners!")
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
     }
   }
 };

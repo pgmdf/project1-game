@@ -26,6 +26,15 @@ function updateMetaGame() {
     document.getElementById('user-score').innerText = `${userScore}`
 }
 
+// reset meta-game-information
+function resetMetaGame() {
+    computerScore = 0
+    userScore = 0
+    document.getElementById('computer-score').innerText = `${computerScore}`
+    document.getElementById('user-score').innerText = `${userScore}`
+}
+
+
 // display the actual card to play 
 // TODO: add transition/animation to the card
 function startGame() {
@@ -41,7 +50,18 @@ function startGame() {
 
 // switch to instructions
 document.getElementById('help').onclick = () => {
-    document.getElementById('instructions').className = "visible"
-    //document.getElementById('instructions').remove()
+   document.getElementById("instructions").style.height = "100%";
 };
+
+// close instructions
+document.getElementById('close').onclick = () => {
+    document.getElementById("instructions").style.height = "0%";
+}
+
+// close endscreen
+document.getElementById('play-again').onclick = () => {
+    document.getElementById("the-winner-is").style.height = "0%";
+    resetMetaGame()
+    pickRandomCards()
+}
 
