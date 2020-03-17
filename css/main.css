@@ -142,3 +142,16 @@ body {
 .btn-pgmdf-warning {
     background-color: #00000029;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .pgmdf-vw {
+        max-width: 90vw;
+    }
+
+    #game-section {
+        background-color: lightgray;
+        border: 1px solid lightslategray;
+        border-radius: 20px;
+    }
+}

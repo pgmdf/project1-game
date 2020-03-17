@@ -18,14 +18,14 @@
 <body>
     <h1 class="sr-only">Future Transport Quartet/Card game</h1>
     <!-- START SCREEN - will disappear after button click -->
-    <div id="start-screen" class="container d-flex col-xs-12 justify-content-center align-items-center visible">
+    <div id="start-screen" class="container d-flex col-12 justify-content-center align-items-center visible">
         <button id="start-game-button" type="button" class="btn btn-primary">Start game!</button>
     </div>
     <!-- GAME SCREEN -->
     <main class="invisible">
         <!-- HELP SCREEN -->
         <div id="instructions" class="container overlay">
-            <div class="col-xs-12 pl-3 pr-3 pt-3 d-flex flex-column">
+            <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column">
                 <div class="flex-row align-self-center"><i id="close" class="fa fa-window-close fa-lg" aria-hidden="true"></i></div>
                 <div class="flex-row mt-3 align-items-flexstart">
                     <ol>
@@ -40,7 +40,7 @@
         </div>
         <!-- ENDSCREEN -->
         <div id="the-winner-is" class="container endscreen">
-            <div class="col-xs-12 pl-3 pr-3 pt-3 d-flex flex-column align-items-flexstart">
+            <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column align-items-flexstart">
                 <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
                     
                 </div>
@@ -49,7 +49,7 @@
         </div>
         <!-- SCORES AND HELP -->
         <section id="meta-game-information" class="container">
-            <div class="col-xs-12 pl-2 pr-2 mt-2 d-flex flex-row justify-content-between align-items-center">
+            <div class="col-12 col-md-4 pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
                 <div class="flex-column">
                     <i class="fas fa-street-view fa-2x"></i><span id="user-score" class="pl-2 user-score"></span></div>
                 <!-- <p class="pl-2 pr-2">Some text to test…</p> -->
@@ -62,20 +62,25 @@
         <!-- CARDS -->
         <section id="game-section" class="container pgmdf-vw p-3">
             <!-- add class transition-test for background change -->
-            <div class="col-xs-12 pl-2 pr-2 d-flex flex-column">
+            <div class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
                 <img src="" alt="" class="img-fluid mt-2 mb-2" id="card-img" />
                 <p id="card-name"></p>
             </div>
-            <!-- <h2 id="card-name" class="col-xs-12 pl-2 pr-2">Ready, set, go!</h2> -->
-            <div id="buttons" class="col-xs-12 pl-2 pr-2 d-flex flex-column">
+            <div id="buttons" class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
                 <button id="key-value-1" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
                 <button id="key-value-2" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
                 <button id="key-value-3" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
                 <button id="key-value-4" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
                 <button id="key-value-5" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
             </div>
-            <div class="col-xs-12 pl-2 pr-2 d-flex flex-column">
+            <div class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
                 <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
+            </div>
+        </section>
+        <!-- LARGER DEVICES -->
+        <section id="larger-devices" class="container d-none d-md-block">
+            <div class="col-md-4 offset-md-4">
+                <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/VIZ_Berlin?ref_src=twsrc%5Etfw" data-tweet-limit="5">Tweets by VIZ_Berlin</a>
             </div>
         </section>
     </main>
@@ -83,6 +88,7 @@
     <script type="text/javascript" src="js/gamelogic.js"></script>
     <script type="text/javascript" src="js/dom.js"></script>
     <script type="text/javascript" src="js/eventhandlers.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
 </html>
