@@ -1,12 +1,13 @@
 /* author: github.com/pgmdf */
 /* individual styles - main styles refer to bootstrap */
 
+html,
 body {
-    background-color: whitesmoke;
+    overflow-x: hidden;
 }
 
-main {
-    overflow-x: hidden;
+body {
+    background-color: whitesmoke;
 }
 
 #start-screen {
@@ -163,7 +164,7 @@ main {
         margin-top: -2em;
     }
 
-    #game-section {      
+    #game-section {
         border: 2px solid lightslategray;
     }
 
@@ -182,7 +183,7 @@ main {
     .user-score {
         font-size: 1em;
     }
-    
+
     .computer-score {
         font-size: 1em;
     }
