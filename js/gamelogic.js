@@ -25,8 +25,6 @@ class Card {
         this.keyvalue4 = keyvalue4
         this.keyname5 = keyname5
         this.keyvalue5 = keyvalue5
-        this.keyname6 = keyname6
-        this.keyvalue6 = keyvalue6
     }
 
     // properties that are individual for a specific card deck
@@ -46,6 +44,17 @@ class Card {
         return this.keyvalue2
     }
 
+    keyvalue3() {
+        return this.keyvalue3
+    }
+
+    keyvalue4() {
+        return this.keyvalue4
+    }
+
+    keyvalue5() {
+        return this.keyvalue5
+    }
 }
 
 
@@ -87,8 +96,6 @@ function checkWinnerKeyValue1() {
     } else {
         userScore += 5
     }
-    console.log(computerScore)
-    console.log(userScore)
     updateMetaGame()
 }
 

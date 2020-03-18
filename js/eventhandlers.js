@@ -68,24 +68,23 @@ document.getElementById('key-value-submit').onclick = () => {
   }
 
   // GAMELOGIC: remove played cards  
-  console.log("userCards.length before shift(): " + userCards.length)
   userCards.shift()
-  console.log("userCards.length after shift(): " + userCards.length)
   computerCards.shift()
 
-  // reset submit-button 
+  // GAMELOGIC: reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
 
-  // test for transition - adding transition
-  //document.getElementsByClassName('transition-test')[0].classList.add('new-card')
+  playBestOfFive()
+};
+// test for transition - adding transition
+//document.getElementsByClassName('transition-test')[0].classList.add('new-card')
 
-  // load new user card as long as there are cards left
-  // SOLVED: find end of the game, so exit if card deck = 0
-  // SOLVED: another function needed to count down one cards array
-  if (userCards.length > 0) {
+
+// mode: best-of five
+function playBestOfFive() {
+  if (userCards.length >= 5) {
     startGame()
   } else {
-    // TODO: nicer endscreen and a message fitting to the theme / character of the game
     // computer wins
     if (userScore > computerScore && window.screen.width <= 767) {
       document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
@@ -123,14 +122,15 @@ document.getElementById('key-value-submit').onclick = () => {
       document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
     }
   }
-};
+}
+
 
 
 // UXUI: flip image to show which card computer is playing 
-// SOLVED: rename transport-img to open the game for more decks
 document.getElementById('card-img').onclick = () => {
   console.log("onclick on picture works")
   document.getElementById('card-img').src = `${computerCards[0].imgFile}`
   //transition to get back to origin
   //document.getElementById('card-img').src= `${userCards[0].imgFile}`
 };
+

@@ -143,6 +143,10 @@ body {
     background-color: #00000029;
 }
 
+#score-board-md {
+    visibility: hidden;
+}
+
 
 @media only screen and (min-width: 768px) {
     body {
@@ -186,5 +190,9 @@ body {
         color: rgb(255, 130, 130);
         /* color: #ea5837; */
         text-shadow: 0 -1px 1px #8c3d20, 0 1px 1px #FFFFFF;
+    }
+
+    #score-board-md {
+        visibility: visible;
     }
 }
