@@ -22,10 +22,11 @@ document.getElementById('start-game-button').onclick = () => {
 
 // display meta-game-information
 function updateMetaGame() {
-    document.getElementById('computer-score').innerText = `${computerScore}`
-    document.getElementById('user-score').innerText = `${userScore}`
-    document.getElementById('computer-score-md').innerText = `${computerScore}`
-    document.getElementById('user-score-md').innerText = `${userScore}`
+        document.getElementById('computer-score').innerText = `${computerScore}`
+        document.getElementById('user-score').innerText = `${userScore}`
+        // larger screens
+        document.getElementById('computer-score-md').innerText = `${computerScore}`
+        document.getElementById('user-score-md').innerText = `${userScore}`
 }
 
 // reset meta-game-information
@@ -40,7 +41,7 @@ function resetMetaGame() {
 // display the actual card to play 
 // TODO: add transition/animation to the card
 function startGame() {
-    document.getElementById('card-img').src= `${userCards[0].imgFile}`
+    document.getElementById('card-img').src = `${userCards[0].imgFile}`
     document.getElementById('card-name').innerText = `${userCards[0].name}`
     //document.getElementById('key-value-1').innerHTML = '<i class="fas fa-stopwatch fa-2x pr-4"></i>' + `${userCards[0].velocity}`
     document.getElementById('key-value-1').innerHTML = '<div class="row justify-content-around pr-5 pl-5">' + '<div><b>' + `${userCards[0].keyname1}:` + '</b></div>' + '<div>' + `${userCards[0].keyvalue1}` + '</div>' + '</div>'
@@ -52,13 +53,13 @@ function startGame() {
 
 // switch to instructions
 document.getElementById('help').onclick = () => {
-   document.getElementById("instructions").style.height = "100%";
+    document.getElementById("instructions").style.height = "100%";
 };
 
 // switch to instructions larger screens
 document.getElementById('help-md').onclick = () => {
     document.getElementById("instructions-md").style.height = "100%";
- };
+};
 
 // close instructions
 document.getElementById('close').onclick = () => {
@@ -77,3 +78,9 @@ document.getElementById('play-again').onclick = () => {
     pickRandomCards()
 }
 
+// close endscreen larger screens
+document.getElementById('play-again-md').onclick = () => {
+    document.getElementById("the-winner-is-md").style.height = "0%";
+    resetMetaGame()
+    pickRandomCards()
+}

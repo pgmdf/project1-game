@@ -40,8 +40,8 @@
             </div>
         </div>
         <!-- ENDSCREEN -->
-        <div id="the-winner-is" class="endscreen">
-            <div class="col-12 pl-3 pr-3 pt-3 mt-5 d-flex flex-column align-items-flexstart">
+        <div id="the-winner-is" class="container endscreen">
+            <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column align-items-flexstart">
                 <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
 
                 </div>
@@ -53,7 +53,8 @@
         <section id="meta-game-information" class="container d-md-none">
             <div class="col-12 col-md-4 pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
                 <div class="flex-column">
-                    <i class="fas fa-street-view fa-2x"></i><span id="user-score-md" class="pl-2 user-score"></span></div>
+                    <i class="fas fa-street-view fa-2x"></i><span id="user-score-md" class="pl-2 user-score"></span>
+                </div>
                 <!-- <p class="pl-2 pr-2">Some text to test…</p> -->
                 <i id="help" class="fas fa-question fa-lg"></i>
                 <div class="flex-column">
@@ -63,7 +64,7 @@
         </section>
         <!-- CARDS -->
         <div class="container d-flex flex-row">
-            <section id="game-section" class="col-12 col-md-4 pl-2 pr-2 p-3">
+            <section id="game-section" class="col-12 col-md-6 col-lg-4 pl-2 pr-2 p-3">
                 <!-- add class transition-test for background change -->
                 <div class="d-flex flex-column">
                     <img src="" alt="" class="img-fluid mt-2 mb-2" id="card-img" />
@@ -80,8 +81,10 @@
                     <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
                 </div>
             </section>
+
+            
             <!-- LARGER DEVICES -->
-            <!-- HELP SCREEN -->
+            <!-- HELP SCREEN LARGER SCREEN -->
             <div id="instructions-md" class="container overlay d-none d-md-block col-md-6 offset-md-6">
                 <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column">
                     <div class="flex-row align-self-center"><i id="close-md" class="fa fa-window-close fa-lg"
@@ -97,8 +100,18 @@
                     </div>
                 </div>
             </div>
+            <!-- ENDSCREEN LARGER SCREEN -->
+            <div id="the-winner-is-md" class="endscreen d-none d-md-block">
+                <div class="col-12 pl-3 pr-3 pt-3 mt-5 d-flex flex-column align-items-flexstart">
+                    <div id="write-winner-md" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
+
+                    </div>
+                    <div id="play-again-md" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3"
+                            aria-hidden="true"></i>Play again!</div>
+                </div>
+            </div>
             <!-- SCOREBOARD LARGER SCREEN -->
-            <div class="container d-flex flex-column d-none d-md-block col-md-4 offset-md-4">
+            <div class="d-none d-sm-none d-md-block container d-flex flex-column col-md-4 offset-lg-4">
                 <section id="meta-game-information"
                     class="pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
                     <div class="flex-column">

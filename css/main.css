@@ -178,4 +178,13 @@ body {
     .computer-score {
         font-size: 1em;
     }
+
+    #write-winner-md {
+        font-size: 2em;
+        text-align: center;
+        background: none repeat scroll 0 0 #d95032;
+        color: rgb(255, 130, 130);
+        /* color: #ea5837; */
+        text-shadow: 0 -1px 1px #8c3d20, 0 1px 1px #FFFFFF;
+    }
 }
