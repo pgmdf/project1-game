@@ -51,7 +51,7 @@
         </div>
         <!-- SCORES AND HELP -->
         <section id="meta-game-information" class="container d-md-none">
-            <div class="col-12 col-md-4 pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
+            <div class="col-12 col-md-5 pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
                 <div class="flex-column">
                     <i class="fas fa-street-view fa-2x"></i><span id="user-score-md" class="pl-2 user-score"></span>
                 </div>
@@ -64,7 +64,7 @@
         </section>
         <!-- CARDS -->
         <div class="container d-flex flex-row">
-            <section id="game-section" class="col-12 col-md-6 col-lg-4 pl-2 pr-2 p-3">
+            <section id="game-section" class="col-12 col-md-5 pl-2 pr-2 p-3">
                 <!-- add class transition-test for background change -->
                 <div class="d-flex flex-column">
                     <img src="" alt="" class="img-fluid mt-2 mb-2" id="card-img" />
@@ -85,7 +85,7 @@
             
             <!-- LARGER DEVICES -->
             <!-- HELP SCREEN LARGER SCREEN -->
-            <div id="instructions-md" class="container overlay d-none d-md-block col-md-6 offset-md-6">
+            <div id="instructions-md" class="container overlay d-none d-md-block col-md-5 offset-md-6">
                 <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column">
                     <div class="flex-row align-self-center"><i id="close-md" class="fa fa-window-close fa-lg"
                             aria-hidden="true"></i></div>
@@ -98,6 +98,10 @@
                             <li>Good luck!</li>
                         </ol>
                     </div>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                      </div>
                 </div>
             </div>
             <!-- ENDSCREEN LARGER SCREEN -->
@@ -111,9 +115,9 @@
                 </div>
             </div>
             <!-- SCOREBOARD LARGER SCREEN -->
-            <div id="score-board-md" class="d-none d-sm-none d-md-block container d-flex flex-column col-md-4 offset-lg-4">
+            <div id="score-board-md" class="d-none d-sm-none d-md-block container d-flex flex-column col-md-5">
                 <section id="meta-game-information"
-                    class="pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
+                    class="pl-2 pr-2 mt-2 mb-4 d-flex flex-row justify-content-between align-items-center">
                     <div class="flex-column">
                         <i class="fas fa-street-view fa-2x"></i><span id="user-score" class="pl-2 user-score"></span>
                     </div>
@@ -125,12 +129,7 @@
                     </div>
                 </section>
                 <section id="larger-devices">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores adipisci id non pariatur
-                        dicta
-                        porro, error quos. Eum quas ea provident magnam saepe enim asperiores obcaecati eveniet, ipsa
-                        porro
-                        velit!</p>
-                    <!-- <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/VIZ_Berlin?ref_src=twsrc%5Etfw" data-tweet-limit="5" dnt="true">Tweets by VIZ_Berlin</a> -->
+                    <a class="twitter-timeline" data-theme="light" href="https://twitter.com/VIZ_Berlin?ref_src=twsrc%5Etfw" data-tweet-limit="2" dnt="true">Tweets by VIZ_Berlin</a> 
                 </section>
             </div>
         </div>

@@ -15,6 +15,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
+    z-index: 50;
 }
 
 #start-game-button {
@@ -120,16 +121,23 @@ body {
 .score-up {
     color: green;
     font-size: 4em;
+    transition: all 1s ease;
 }
 
 .score-down {
     color: red;
     font-size: 0.5em;
+    transition: all 1s ease;
 }
 
 .btn-pgmdf {
     background-color: #1B8CA6;
     color: white;
+}
+
+.btn-pgmdf:link, .btn-pgmdf:hover, .btn-pgmdf:focus {
+    color: white;
+    font-weight: 600;
 }
 
 .active.btn-pgmdf {
