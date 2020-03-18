@@ -26,7 +26,8 @@
         <!-- HELP SCREEN -->
         <div id="instructions" class="container overlay">
             <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column">
-                <div class="flex-row align-self-center"><i id="close" class="fa fa-window-close fa-lg" aria-hidden="true"></i></div>
+                <div class="flex-row align-self-center"><i id="close" class="fa fa-window-close fa-lg"
+                        aria-hidden="true"></i></div>
                 <div class="flex-row mt-3 align-items-flexstart">
                     <ol>
                         <li>Pick a criteria</li>
@@ -39,51 +40,87 @@
             </div>
         </div>
         <!-- ENDSCREEN -->
-        <div id="the-winner-is" class="container endscreen">
-            <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column align-items-flexstart">
+        <div id="the-winner-is" class="endscreen">
+            <div class="col-12 pl-3 pr-3 pt-3 mt-5 d-flex flex-column align-items-flexstart">
                 <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
-                    
+
                 </div>
-                <div id="play-again" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3" aria-hidden="true"></i>Play again!</div>
+                <div id="play-again" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3"
+                        aria-hidden="true"></i>Play again!</div>
             </div>
         </div>
         <!-- SCORES AND HELP -->
-        <section id="meta-game-information" class="container">
+        <section id="meta-game-information" class="container d-md-none">
             <div class="col-12 col-md-4 pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
                 <div class="flex-column">
-                    <i class="fas fa-street-view fa-2x"></i><span id="user-score" class="pl-2 user-score"></span></div>
+                    <i class="fas fa-street-view fa-2x"></i><span id="user-score-md" class="pl-2 user-score"></span></div>
                 <!-- <p class="pl-2 pr-2">Some text to test…</p> -->
                 <i id="help" class="fas fa-question fa-lg"></i>
                 <div class="flex-column">
-                    <span id="computer-score" class="pr-2 computer-score"></span><i class="fas fa-gamepad fa-2x"></i>
+                    <span id="computer-score-md" class="pr-2 computer-score"></span><i class="fas fa-gamepad fa-2x"></i>
                 </div>
             </div>
         </section>
         <!-- CARDS -->
-        <section id="game-section" class="container pgmdf-vw p-3">
-            <!-- add class transition-test for background change -->
-            <div class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
-                <img src="" alt="" class="img-fluid mt-2 mb-2" id="card-img" />
-                <p id="card-name"></p>
+        <div class="container d-flex flex-row">
+            <section id="game-section" class="col-12 col-md-4 pl-2 pr-2 p-3">
+                <!-- add class transition-test for background change -->
+                <div class="d-flex flex-column">
+                    <img src="" alt="" class="img-fluid mt-2 mb-2" id="card-img" />
+                    <p id="card-name"></p>
+                </div>
+                <div id="buttons" class="d-flex flex-column">
+                    <button id="key-value-1" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+                    <button id="key-value-2" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+                    <button id="key-value-3" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+                    <button id="key-value-4" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+                    <button id="key-value-5" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+                </div>
+                <div class="d-flex flex-column">
+                    <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
+                </div>
+            </section>
+            <!-- LARGER DEVICES -->
+            <!-- HELP SCREEN -->
+            <div id="instructions-md" class="container overlay d-none d-md-block col-md-6 offset-md-6">
+                <div class="col-12 pl-3 pr-3 pt-3 d-flex flex-column">
+                    <div class="flex-row align-self-center"><i id="close-md" class="fa fa-window-close fa-lg"
+                            aria-hidden="true"></i></div>
+                    <div class="flex-row mt-3 align-items-flexstart">
+                        <ol>
+                            <li>Pick a criteria</li>
+                            <li>Submit your choice</li>
+                            <li>Beat your opponent</li>
+                            <li>Choose wisely</li>
+                            <li>Good luck!</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-            <div id="buttons" class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
-                <button id="key-value-1" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
-                <button id="key-value-2" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
-                <button id="key-value-3" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
-                <button id="key-value-4" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
-                <button id="key-value-5" class="btn btn-pgmdf mt-1 mb-1" onClick="reply_click(this.id)"></button>
+            <!-- SCOREBOARD LARGER SCREEN -->
+            <div class="container d-flex flex-column d-none d-md-block col-md-4 offset-md-4">
+                <section id="meta-game-information"
+                    class="pl-2 pr-2 mt-2 mb-2 d-flex flex-row justify-content-between align-items-center">
+                    <div class="flex-column">
+                        <i class="fas fa-street-view fa-2x"></i><span id="user-score" class="pl-2 user-score"></span>
+                    </div>
+                    <!-- SHOW INSTRUCTIONS LARGER SCREEN -->
+                    <i id="help-md" class="fas fa-question fa-lg"></i>
+                    <div class="flex-column">
+                        <span id="computer-score" class="pr-2 computer-score"></span><i
+                            class="fas fa-gamepad fa-2x"></i>
+                    </div>
+                </section>
+                <section id="larger-devices">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores adipisci id non pariatur
+                        dicta
+                        porro, error quos. Eum quas ea provident magnam saepe enim asperiores obcaecati eveniet, ipsa
+                        porro
+                        velit!</p>
+                    <!-- <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/VIZ_Berlin?ref_src=twsrc%5Etfw" data-tweet-limit="5" dnt="true">Tweets by VIZ_Berlin</a> -->
+                </section>
             </div>
-            <div class="col-12 col-md-4 pl-2 pr-2 d-flex flex-column">
-                <button id="key-value-submit" class="btn btn-pgmdf-warning mt-1 mb-1">Confirm your choice</button>
-            </div>
-        </section>
-        <!-- LARGER DEVICES -->
-        <section id="larger-devices" class="container d-none d-md-block">
-            <div class="col-md-4 offset-md-4">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores adipisci id non pariatur dicta porro, error quos. Eum quas ea provident magnam saepe enim asperiores obcaecati eveniet, ipsa porro velit!</p>
-                <!-- <a class="twitter-timeline" data-height="600" data-theme="light" href="https://twitter.com/VIZ_Berlin?ref_src=twsrc%5Etfw" data-tweet-limit="5" dnt="true">Tweets by VIZ_Berlin</a> -->
-            </div>
-        </section>
+        </div>
     </main>
     <script type="text/javascript" src="js/cards.js"></script>
     <script type="text/javascript" src="js/gamelogic.js"></script>

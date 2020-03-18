@@ -100,7 +100,7 @@ body {
     color: #B9B8B8;
     /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
-    font-size: 1rem;
+    font-size: 1em;
     transition: all 1s ease;
 }
 
@@ -108,18 +108,18 @@ body {
     color: #B9B8B8;
     /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
-    font-size: 1rem;
+    font-size: 1em;
     transition: all 1s ease;
 }
 
 .score-up {
     color: green;
-    font-size: 4rem;
+    font-size: 4em;
 }
 
 .score-down {
     color: red;
-    font-size: 0.5rem;
+    font-size: 0.5em;
 }
 
 .btn-pgmdf {
@@ -145,13 +145,37 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-    .pgmdf-vw {
-        max-width: 90vw;
+    body {
+        margin-top: 2em;
+        font-size: 2em;
+        line-height: 1.5;
     }
 
-    #game-section {
-        background-color: lightgray;
-        border: 1px solid lightslategray;
-        border-radius: 20px;
+    #start-screen {
+        margin-top: -2em;
+    }
+
+    #game-section {      
+        border: 2px solid lightslategray;
+    }
+
+    .overlay {
+        right: 0;
+    }
+
+    #card-name {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.75em;
+    }
+
+    .user-score {
+        font-size: 1em;
+    }
+    
+    .computer-score {
+        font-size: 1em;
     }
 }

@@ -24,6 +24,8 @@ document.getElementById('start-game-button').onclick = () => {
 function updateMetaGame() {
     document.getElementById('computer-score').innerText = `${computerScore}`
     document.getElementById('user-score').innerText = `${userScore}`
+    document.getElementById('computer-score-md').innerText = `${computerScore}`
+    document.getElementById('user-score-md').innerText = `${userScore}`
 }
 
 // reset meta-game-information
@@ -53,9 +55,19 @@ document.getElementById('help').onclick = () => {
    document.getElementById("instructions").style.height = "100%";
 };
 
+// switch to instructions larger screens
+document.getElementById('help-md').onclick = () => {
+    document.getElementById("instructions-md").style.height = "100%";
+ };
+
 // close instructions
 document.getElementById('close').onclick = () => {
     document.getElementById("instructions").style.height = "0%";
+}
+
+// close instructions larger screens
+document.getElementById('close-md').onclick = () => {
+    document.getElementById("instructions-md").style.height = "0%";
 }
 
 // close endscreen

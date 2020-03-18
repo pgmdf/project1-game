@@ -5,9 +5,9 @@
 // had to use absolute path and url to make it work with github-pages
 
 let cardsArray = [
-    // SUV
+    // Car
     {
-        name: "SUV",
+        name: "Car",
         imgFile: 'https://pgmdf.github.io/project1-game/images/dummypic1.png',
         category: "dark side",
         cardindex: 1,
