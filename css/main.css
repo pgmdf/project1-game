@@ -5,6 +5,10 @@ body {
     background-color: whitesmoke;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 #start-screen {
     background-color: #d95032;
     height: 100%;
