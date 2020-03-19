@@ -75,7 +75,6 @@ body {
     max-height: 30vh;
     box-shadow: 2px 0px 1px 2px rgba(245, 245, 245, 0.6), -2px 0px 1px 2px rgba(245, 245, 245, 0.6), 0px -2px 1px 2px rgba(245, 245, 245, 0.6), 0px 2px 1px 2px rgba(245, 245, 245, 0.6);
     z-index: 5;
-    /* https://alligator.io/css/cropping-images-object-fit/ */
     object-fit: cover;
 }
 
@@ -92,16 +91,6 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
-.transition-test {
-    background-color: rgba(255, 0, 0, 0.2);
-    transition: background-color 1s ease;
-}
-
-.new-card {
-    background-color: rgba(255, 0, 0, 0.8);
-}
-
 
 .user-score {
     color: #B9B8B8;
@@ -164,7 +153,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     body {
-        margin-top: 2em;
+        margin-top: 1.5em;
         font-size: 2em;
         line-height: 1.5;
     }

@@ -43,7 +43,7 @@ function resetMetaGame() {
 function startGame() {
     document.getElementById('card-img').src = `${userCards[0].imgFile}`
     document.getElementById('card-name').innerText = `${userCards[0].name}`
-    //document.getElementById('key-value-1').innerHTML = '<i class="fas fa-stopwatch fa-2x pr-4"></i>' + `${userCards[0].velocity}`
+    // setting and displaying keynames and keyvalues
     document.getElementById('key-value-1').innerHTML = '<div class="row justify-content-around pr-5 pl-5">' + '<div>' + `${userCards[0].keyname1}:` + '</div>' + '<div>' + `${userCards[0].keyvalue1}` + '</div>' + '</div>'
     document.getElementById('key-value-2').innerHTML = '<div class="row justify-content-around pr-5 pl-5">' + '<div>' + `${userCards[0].keyname2}:` + '</div>' + '<div>' + `${userCards[0].keyvalue2}` + '</div>' + '</div>'
     document.getElementById('key-value-3').innerHTML = '<div class="row justify-content-around pr-5 pl-5">' + '<div>' + `${userCards[0].keyname3}:` + '</div>' + '<div>' + `${userCards[0].keyvalue3}` + '</div>' + '</div>'

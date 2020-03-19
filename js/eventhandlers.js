@@ -76,8 +76,6 @@ document.getElementById('key-value-submit').onclick = () => {
 
   playBestOfFive()
 };
-// test for transition - adding transition
-//document.getElementsByClassName('transition-test')[0].classList.add('new-card')
 
 
 // mode: best-of five
@@ -123,14 +121,4 @@ function playBestOfFive() {
     }
   }
 }
-
-
-
-// UXUI: flip image to show which card computer is playing 
-document.getElementById('card-img').onclick = () => {
-  console.log("onclick on picture works")
-  document.getElementById('card-img').src = `${computerCards[0].imgFile}`
-  //transition to get back to origin
-  //document.getElementById('card-img').src= `${userCards[0].imgFile}`
-};
 
