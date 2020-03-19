@@ -74,7 +74,14 @@ document.getElementById('key-value-submit').onclick = () => {
   // GAMELOGIC: reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
 
-  playBestOfFive()
+
+  // TODO: check which radio button is active
+  if (document.getElementById("inlineRadioBestOfFive").checked = true) {
+    playBestOfFive()
+  }
+  if (document.getElementById("inlineRadioTilTheEnd").checked = true) {
+    playTilTheEnd()
+  }
 };
 
 
@@ -121,4 +128,61 @@ function playBestOfFive() {
     }
   }
 }
+
+
+// mode: til the end
+function playTilTheEnd() {
+  if (userCards.length > 0) {
+    startGame()
+  } else {
+    // computer wins
+    if (userScore > computerScore && window.screen.width <= 767) {
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
+    }
+    // lager screens computer wins
+    if (userScore > computerScore && window.screen.width >= 768) {
+      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is-md").style.height = "100%"
+      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
+    }
+    // user wins
+    if (userScore < computerScore && window.screen.width <= 767) {
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
+    }
+    // larger screens user wins
+    if (userScore > computerScore && window.screen.width >= 768) {
+      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is-md").style.height = "100%"
+      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
+    }
+    // both are equal
+    if (userScore == computerScore && window.screen.width <= 767) {
+      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is").style.height = "100%"
+      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
+    }
+    // larger screens both are equal
+    if (userScore == computerScore && window.screen.width >= 768) {
+      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+      document.getElementById("the-winner-is-md").style.height = "100%"
+      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
+    }
+  }
+}
+
+
+// UXUI: change image and name to show which card computer is playing 
+document.getElementById('card-img').onmousedown = () => {
+  document.getElementById('card-img').src = `${computerCards[0].imgFile}`
+  document.getElementById('card-name').innerText = `${computerCards[0].name}`
+};
+
+document.getElementById('card-img').onmouseup = () => {
+  document.getElementById('card-img').src = `${userCards[0].imgFile}`
+  document.getElementById('card-name').innerText = `${userCards[0].name}`
+};
 
