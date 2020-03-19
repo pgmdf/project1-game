@@ -20,5 +20,8 @@ The first project in the Ironhack WebDevPT course should be a game. I decided to
 ## Tracking of progress
 [Github-Project](https://github.com/pgmdf/project1-game/projects/1)
 
-## Link to Github-Pages
-[Beta-Version (mobile first)](https://pgmdf.github.io/project1-game) _(10.03.2020)_
+
+## Link to Netlify
+[Beta-Version (mobile first)](https://pgmdf.netlify.com/) _(19.03.2020)_
+
+## Useful learnings
