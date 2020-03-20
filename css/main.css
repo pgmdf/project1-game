@@ -14,6 +14,7 @@ body {
     background-image: linear-gradient(#d95032, #d95032), url(../images/background_start_sw.jpg);
     background-size: cover;
     background-blend-mode: color;
+    background-position: center top;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -115,7 +116,7 @@ body {
     padding-bottom: 0.25em;
     margin-top: -2.25em;
     background: rgb(217, 80, 50);
-    background: linear-gradient(0deg, rgba(217, 80, 50, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(0deg, rgba(217, 80, 50, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     z-index: 10;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -171,6 +172,10 @@ body {
     color: rgb(147, 146, 146);
     text-shadow: 1px 1px 0 #EEEEEE, 2px 2px 0 #707070;
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
+}
+
+.fa-question:hover {
+    color: rgba(217, 80, 50, 1);
 }
 
 .btn-pgmdf-warning {
