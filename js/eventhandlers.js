@@ -96,7 +96,7 @@ function playBestOfFive() {
       document.getElementById("the-winner-is").style.height = "100%"
       document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
     }
-    // lager screens computer wins
+    // lager screens user wins
     if (userScore > computerScore && window.screen.width >= 768) {
       document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
       document.getElementById("the-winner-is-md").style.height = "100%"
@@ -109,7 +109,7 @@ function playBestOfFive() {
       document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
     }
     // larger screens user wins
-    if (userScore > computerScore && window.screen.width >= 768) {
+    if (userScore < computerScore && window.screen.width >= 768) {
       document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
       document.getElementById("the-winner-is-md").style.height = "100%"
       document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"

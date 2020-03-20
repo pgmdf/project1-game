@@ -8,7 +8,7 @@ let cardsArray = [
     // Car TODO: change image
     {
         name: "Car",
-        imgFile: '../images/dummypic1.png',
+        imgFile: '../images/car.jpg',
         category: "dark side",
         cardindex: 1,
         keyname1: "velocity in km/h",
@@ -26,7 +26,7 @@ let cardsArray = [
     // SUP
     {
         name: "SUP",
-        imgFile: '../images/dummypic2.png',
+        imgFile: '../images/sup.jpg',
         category: "green side",
         cardindex: 2,
         keyname1: "velocity in km/h",
@@ -80,7 +80,7 @@ let cardsArray = [
     // Bicycle TODO: change image
     {
         name: "Bicycle",
-        imgFile: '../images/dummypic5.png',
+        imgFile: '../images/bicycle.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -116,7 +116,7 @@ let cardsArray = [
     // Footbike
     {
         name: "Footbike",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/footbike.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -134,7 +134,7 @@ let cardsArray = [
     // S-Bahn
     {
         name: "S-Bahn",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/sbahn.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -152,7 +152,7 @@ let cardsArray = [
     // Longboard
     {
         name: "Longboard",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/longboard.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -167,10 +167,10 @@ let cardsArray = [
         keyvalue5: 12
     },
 
-    // Inline skates TODO: change image
+    // Inline skates 
     {
         name: "Inline skates",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/inlineskates.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -188,7 +188,7 @@ let cardsArray = [
     // Tram
     {
         name: "Tram",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/tram.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -206,7 +206,7 @@ let cardsArray = [
     // Cable car
     {
         name: "Cable car",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/cablecar.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -224,7 +224,7 @@ let cardsArray = [
     // E-Bike
     {
         name: "E-Bike",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/ebike.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -242,7 +242,7 @@ let cardsArray = [
     // E-Scooter
     {
         name: "E-Scooter",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/escooter.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -260,7 +260,7 @@ let cardsArray = [
     // E-Moped
     {
         name: "E-Moped",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/emoped.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
@@ -278,7 +278,7 @@ let cardsArray = [
     // Bus
     {
         name: "Bus",
-        imgFile: '../images/dummypic6.png',
+        imgFile: '../images/bus.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
