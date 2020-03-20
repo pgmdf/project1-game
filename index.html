@@ -38,6 +38,30 @@
                     </ol>
                 </div>
             </div>
+            <div class="flex-row mt-3 align-items-flexstart">
+                <p>Choose your game mode:</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions"
+                        id="inlineRadioBestOfFive" value="bestof5" checked>
+                    <label class="form-check-label" for="inlineRadio1">Best-of-five</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions"
+                        id="inlineRadioTilTheEnd" value="tilnocardsareleft">
+                    <label class="form-check-label" for="inlineRadio2">'til no cards are left</label>
+                </div>
+            </div>
+            <div id="sources" class="flex-row mt-3 align-items-flexstart">
+                <p>Keyvalues like velocity and energy are based on research at the below listed sources, but
+                    also on estimaes due to a lack of convinient sources. The energy is based on a person
+                    weighing 70kg.</br>Fun factor, flexibility and load capacity are estimates.</br><a
+                        href="https://www.tk.de/techniker/magazin/sport/basics/energieverbrauch-kalorienverbrauch-2004664"
+                        target="_blank" title="Opens Link to tk.de"><i class="fas fa-link"></i> energy
+                        (tk.de)</a></br><a
+                    href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle" target="_blank"
+                    title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy (foodspring.de)</a>
+                </p>
+            </div>
         </div>
         <!-- ENDSCREEN -->
         <div id="the-winner-is" class="container endscreen">
@@ -45,8 +69,8 @@
                 <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
 
                 </div>
-                <div id="play-again" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3"
-                        aria-hidden="true"></i>Play again!</div>
+                <div id="play-again" class="flex-row align-self-center"><button class="btn btn-outline-light"><i class="fa fa-play fa-lg pr-3"
+                        aria-hidden="true"></i>Play again!</button></div>
             </div>
         </div>
         <!-- SCORES AND HELP -->
@@ -99,14 +123,27 @@
                     </div>
                     <div class="flex-row mt-3 align-items-flexstart">
                         <p>Choose your game mode:</p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions" id="inlineRadioBestOfFive" value="bestof5" checked>
-                        <label class="form-check-label" for="inlineRadio1">Best-of-five</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions" id="inlineRadioTilTheEnd" value="tilnocardsareleft">
-                        <label class="form-check-label" for="inlineRadio2">'til no cards are left</label>
-                      </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions"
+                                id="inlineRadioBestOfFive" value="bestof5" checked>
+                            <label class="form-check-label" for="inlineRadio1">Best-of-five</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input radio-button" type="radio" name="inlineRadioOptions"
+                                id="inlineRadioTilTheEnd" value="tilnocardsareleft">
+                            <label class="form-check-label" for="inlineRadio2">'til no cards are left</label>
+                        </div>
+                    </div>
+                    <div id="sources" class="flex-row mt-3 align-items-flexstart">
+                        <p>Keyvalues like velocity and energy are based on research at the below listed sources, but
+                            also on estimaes due to a lack of convinient sources. The energy is based on a person
+                            weighing 70kg.</br>Fun factor, flexibility and load capacity are estimates.</br><a
+                                href="https://www.tk.de/techniker/magazin/sport/basics/energieverbrauch-kalorienverbrauch-2004664"
+                                target="_blank" title="Opens Link to tk.de"><i class="fas fa-link"></i> energy
+                                (tk.de)</a></br><a
+                            href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle" target="_blank"
+                            title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy (foodspring.de)</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -116,8 +153,8 @@
                     <div id="write-winner-md" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
 
                     </div>
-                    <div id="play-again-md" class="flex-row align-self-center"><i class="fa fa-play fa-lg pr-3"
-                            aria-hidden="true"></i>Play again!</div>
+                    <div id="play-again-md" class="flex-row align-self-center"><button class="btn btn-outline-light"><i class="fa fa-play fa-lg pr-3"
+                            aria-hidden="true"></i>Play again!</button></div>
                 </div>
             </div>
             <!-- SCOREBOARD LARGER SCREEN -->

@@ -41,6 +41,25 @@ body {
     transition: 0.5s;
 }
 
+.overlay a {
+    color: white;
+}
+
+.overlay a:hover {
+    text-decoration: underline;
+}
+
+#sources {
+    padding-top: 2em;
+    font-size: 0.5em;
+    line-height: 2;
+}
+
+#sources .fas {
+    color: white;
+    text-shadow: none;
+}
+
 .endscreen {
     background-color: #d95032;
     color: white;
@@ -99,7 +118,7 @@ body {
 }
 
 .user-score {
-    color: #B9B8B8;
+    color: rgb(147, 146, 146);
     /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
     font-size: 1em;
@@ -107,7 +126,7 @@ body {
 }
 
 .computer-score {
-    color: #B9B8B8;
+    color: rgb(147, 146, 146);
     /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
     font-size: 1em;
@@ -143,7 +162,7 @@ body {
 }
 
 .fas {
-    color: #B9B8B8;
+    color: rgb(147, 146, 146);
     text-shadow: 1px 1px 0 #EEEEEE, 2px 2px 0 #707070;
     /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
 }

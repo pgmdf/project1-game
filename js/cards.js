@@ -5,7 +5,7 @@
 // had to use absolute path and url to make it work with github-pages
 
 let cardsArray = [
-    // Car
+    // Car TODO: change image
     {
         name: "Car",
         imgFile: '../images/dummypic1.png',
@@ -13,14 +13,14 @@ let cardsArray = [
         cardindex: 1,
         keyname1: "velocity in km/h",
         keyvalue1: 48,
-        keyname2: "energy in kcal",
-        keyvalue2: 20,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 120,
         keyname3: "flexibility in %",
-        keyvalue3: 5,
+        keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 3,
+        keyvalue4: 300,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 10
     },
 
     // SUP
@@ -31,7 +31,7 @@ let cardsArray = [
         cardindex: 2,
         keyname1: "velocity in km/h",
         keyvalue1: 8,
-        keyname2: "energy in kcal",
+        keyname2: "energy in kcal/h",
         keyvalue2: 500,
         keyname3: "flexibility in %",
         keyvalue3: 4,
@@ -41,7 +41,7 @@ let cardsArray = [
         keyvalue5: 12
     },
 
-    // Walking
+    // Walking TODO: change image
     {
         name: "Walking",
         imgFile: '../images/dummypic3.png',
@@ -49,14 +49,14 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 6,
-        keyname2: "energy in kcal",
-        keyvalue2: 400,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 460,
         keyname3: "flexibility in %",
-        keyvalue3: 4,
+        keyvalue3: 100,
         keyname4: "load capacity in kg",
-        keyvalue4: 3,
+        keyvalue4: 10,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 80
     },
 
     // Drone
@@ -67,8 +67,8 @@ let cardsArray = [
         cardindex: 4,
         keyname1: "velocity in km/h",
         keyvalue1: 60,
-        keyname2: "energy in kcal",
-        keyvalue2: 1000,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 400,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -77,22 +77,22 @@ let cardsArray = [
         keyvalue5: 12
     },
 
-    // Bicycle
+    // Bicycle TODO: change image
     {
         name: "Bicycle",
         imgFile: '../images/dummypic5.png',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 18,
-        keyname2: "energy in kcal",
-        keyvalue2: 600,
+        keyvalue1: 16,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 520,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 90,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 40,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 60
     },
 
     // Subway
@@ -103,8 +103,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 200,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -121,8 +121,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 450,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -139,8 +139,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 200,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -157,8 +157,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 380,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -167,22 +167,22 @@ let cardsArray = [
         keyvalue5: 12
     },
 
-    // Inline skates
+    // Inline skates TODO: change image
     {
         name: "Inline skates",
         imgFile: '../images/dummypic6.png',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyvalue1: 12,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 490,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 70,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 6,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 60
     },
 
     // Tram
@@ -193,8 +193,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 200,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -211,8 +211,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 150,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -229,8 +229,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 340,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -247,7 +247,7 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
+        keyname2: "energy in kcal/h",
         keyvalue2: 0,
         keyname3: "flexibility in %",
         keyvalue3: 3,
@@ -265,7 +265,7 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
+        keyname2: "energy in kcal/h",
         keyvalue2: 0,
         keyname3: "flexibility in %",
         keyvalue3: 3,
@@ -283,8 +283,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 200,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -301,8 +301,8 @@ let cardsArray = [
         cardindex: 3,
         keyname1: "velocity in km/h",
         keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 120,
         keyname3: "flexibility in %",
         keyvalue3: 3,
         keyname4: "load capacity in kg",
@@ -318,14 +318,14 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
-        keyname2: "energy in kcal",
-        keyvalue2: 0,
+        keyvalue1: 14,
+        keyname2: "energy in kcal/h",
+        keyvalue2: 600,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 120,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 60
     }
 ]
