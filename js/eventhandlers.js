@@ -176,26 +176,26 @@ function playTilTheEnd() {
 
 
 // UXUI: change image and name to show which card computer is playing 
-document.getElementById('card-img').onmousedown = () => {
+document.getElementById('fa-hand-spock').onmousedown = () => {
   document.getElementById('card-img').style.filter = "grayscale(1)"
   document.getElementById('card-img').src = `${computerCards[0].imgFile}`
   document.getElementById('card-name').innerText = `${computerCards[0].name}`
 };
 
-document.getElementById('card-img').onmouseup = () => {
+document.getElementById('fa-hand-spock').onmouseup = () => {
   document.getElementById('card-img').style.filter = "none"
   document.getElementById('card-img').src = `${userCards[0].imgFile}`
   document.getElementById('card-name').innerText = `${userCards[0].name}`
 };
 
 // UXUI: change image and name to show which card computer is playing - touch screens
-document.getElementById('card-img').ontouchstart = () => {
+document.getElementById('fa-hand-spock').ontouchstart = () => {
   document.getElementById('card-img').style.filter = "grayscale(1)"
   document.getElementById('card-img').src = `${computerCards[0].imgFile}`
   document.getElementById('card-name').innerText = `${computerCards[0].name}`
 };
 
-document.getElementById('card-img').ontouchend = () => {
+document.getElementById('fa-hand-spock').ontouchend = () => {
   document.getElementById('card-img').style.filter = "none"
   document.getElementById('card-img').src = `${userCards[0].imgFile}`
   document.getElementById('card-name').innerText = `${userCards[0].name}`

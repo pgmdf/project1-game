@@ -178,6 +178,29 @@ body {
     color: rgba(217, 80, 50, 1);
 }
 
+.container-card {
+    position: relative;
+}
+
+.container-card img {
+    display: block;
+}
+
+.container-card .fa-hand-spock {
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    right: 0;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    font-size: 2.25em;
+    color: #ffffff00;
+}
+
+.fa-hand-spock {
+    font-size: 1.5em;
+}
+
 .btn-pgmdf-warning {
     background-color: #00000029;
 }
