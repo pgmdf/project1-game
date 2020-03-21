@@ -24,7 +24,7 @@ The first project in the Ironhack WebDevPT course should be a game. I decided to
 ## Link to Netlify
 [Beta-Version (mobile first)](https://pgmdf.netlify.com/) _(19.03.2020)_
 
-## Useful learnings & links
+## Useful learnings & tools
 1. mobile first should not go without a plan for larger screens
 2. keep your classes - referred to in html - in order and clean
 3. mobile devices do have a f*ckin' large variety in screen-sizes
