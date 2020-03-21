@@ -24,4 +24,14 @@ The first project in the Ironhack WebDevPT course should be a game. I decided to
 ## Link to Netlify
 [Beta-Version (mobile first)](https://pgmdf.netlify.com/) _(19.03.2020)_
 
-## Useful learnings
+## Useful learnings & links
+1. mobile first should not go without a plan for larger screens
+2. keep your classes - referred to in html - in order and clean
+3. mobile devices do have a f*ckin' large variety in screen-sizes
+4. never underestimate research (data, pictures, …)
+5. try to hit the ground running as fast as possible
+6. ask family and friends to test - "learned" UX/UI could be a surprise 
+
+- Github Projects is a good alternative to any projectmanagement-tool (like trello) - but it doesn't make sense to play the role of the developer and the pm at the same time
+- Adobe Capture (mobile app) is great for saving your inspirations
+- Adobe XD offers good utility for UX/UI flow and basic CSS definitions
