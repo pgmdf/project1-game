@@ -24,7 +24,7 @@ body {
 .start-background {
     background-color: rgba(255, 255, 255, 0.804);
     padding: 1em;
-    max-width: 50vw;
+    max-width: 80vw;
 }
 
 #start-game-button {
@@ -217,6 +217,10 @@ body {
 
     .overlay {
         right: 0;
+    }
+
+    .start-background {
+        max-width: 50vw;
     }
 
     /* #card-name {
