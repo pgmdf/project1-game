@@ -12,13 +12,13 @@ let cardsArray = [
         category: "dark side",
         cardindex: 1,
         keyname1: "velocity in km/h",
-        keyvalue1: 48,
+        keyvalue1: 25,
         keyname2: "energy in kcal/h",
         keyvalue2: 120,
         keyname3: "flexibility in %",
         keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 300,
+        keyvalue4: 600,
         keyname5: "fun factor in %",
         keyvalue5: 10
     },
@@ -30,15 +30,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 2,
         keyname1: "velocity in km/h",
-        keyvalue1: 8,
+        keyvalue1: 6,
         keyname2: "energy in kcal/h",
         keyvalue2: 500,
         keyname3: "flexibility in %",
-        keyvalue3: 4,
+        keyvalue3: 10,
         keyname4: "load capacity in kg",
-        keyvalue4: 3,
+        keyvalue4: 30,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 99
     },
 
     // Walking TODO: change image
@@ -60,24 +60,24 @@ let cardsArray = [
     },
 
     // Drone
-    {
-        name: "Drone",
-        imgFile: '../images/dummypic4.png',
-        category: "invisible side",
-        cardindex: 4,
-        keyname1: "velocity in km/h",
-        keyvalue1: 60,
-        keyname2: "energy in kcal/h",
-        keyvalue2: 400,
-        keyname3: "flexibility in %",
-        keyvalue3: 3,
-        keyname4: "load capacity in kg",
-        keyvalue4: 4,
-        keyname5: "fun factor in %",
-        keyvalue5: 12
-    },
+    // {
+    //     name: "Drone",
+    //     imgFile: '../images/dummypic4.png',
+    //     category: "invisible side",
+    //     cardindex: 4,
+    //     keyname1: "velocity in km/h",
+    //     keyvalue1: 60,
+    //     keyname2: "energy in kcal/h",
+    //     keyvalue2: 400,
+    //     keyname3: "flexibility in %",
+    //     keyvalue3: 3,
+    //     keyname4: "load capacity in kg",
+    //     keyvalue4: 4,
+    //     keyname5: "fun factor in %",
+    //     keyvalue5: 12
+    // },
 
-    // Bicycle TODO: change image
+    // Bicycle 
     {
         name: "Bicycle",
         imgFile: '../images/bicycle.jpg',
@@ -95,23 +95,23 @@ let cardsArray = [
         keyvalue5: 60
     },
 
-    // Subway
-    {
-        name: "Subway",
-        imgFile: '../images/dummypic6.png',
-        category: "green side",
-        cardindex: 3,
-        keyname1: "velocity in km/h",
-        keyvalue1: 20,
-        keyname2: "energy in kcal/h",
-        keyvalue2: 200,
-        keyname3: "flexibility in %",
-        keyvalue3: 3,
-        keyname4: "load capacity in kg",
-        keyvalue4: 4,
-        keyname5: "fun factor in %",
-        keyvalue5: 12
-    },
+    // // Subway
+    // {
+    //     name: "Subway",
+    //     imgFile: '../images/dummypic6.png',
+    //     category: "green side",
+    //     cardindex: 3,
+    //     keyname1: "velocity in km/h",
+    //     keyvalue1: 20,
+    //     keyname2: "energy in kcal/h",
+    //     keyvalue2: 200,
+    //     keyname3: "flexibility in %",
+    //     keyvalue3: 3,
+    //     keyname4: "load capacity in kg",
+    //     keyvalue4: 4,
+    //     keyname5: "fun factor in %",
+    //     keyvalue5: 12
+    // },
 
     // Footbike
     {
@@ -120,15 +120,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 14,
         keyname2: "energy in kcal/h",
         keyvalue2: 450,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 95,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 15,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 99
     },
 
     // S-Bahn
@@ -138,15 +138,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 40,
         keyname2: "energy in kcal/h",
         keyvalue2: 200,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 50,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 30000,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 10
     },
 
     // Longboard
@@ -156,15 +156,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 10,
         keyname2: "energy in kcal/h",
         keyvalue2: 380,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 99,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 5,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 85
     },
 
     // Inline skates 
@@ -178,11 +178,11 @@ let cardsArray = [
         keyname2: "energy in kcal/h",
         keyvalue2: 490,
         keyname3: "flexibility in %",
-        keyvalue3: 70,
+        keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 6,
+        keyvalue4: 5,
         keyname5: "fun factor in %",
-        keyvalue5: 60
+        keyvalue5: 85
     },
 
     // Tram
@@ -192,15 +192,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 19,
         keyname2: "energy in kcal/h",
         keyvalue2: 200,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 30,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 15000,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 5
     },
 
     // Cable car
@@ -210,15 +210,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 21,
         keyname2: "energy in kcal/h",
         keyvalue2: 150,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 5,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 1125,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 70
     },
 
     // E-Bike
@@ -232,11 +232,11 @@ let cardsArray = [
         keyname2: "energy in kcal/h",
         keyvalue2: 340,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 25,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 55
     },
 
     // E-Scooter
@@ -246,15 +246,15 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 15,
         keyname2: "energy in kcal/h",
-        keyvalue2: 0,
+        keyvalue2: 340,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 80,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 25,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 55
     },
 
     // E-Moped
@@ -266,13 +266,13 @@ let cardsArray = [
         keyname1: "velocity in km/h",
         keyvalue1: 20,
         keyname2: "energy in kcal/h",
-        keyvalue2: 0,
+        keyvalue2: 140,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 40,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 50,
         keyname5: "fun factor in %",
-        keyvalue5: 12
+        keyvalue5: 70
     },
 
     // Bus
@@ -282,50 +282,51 @@ let cardsArray = [
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",
-        keyvalue1: 20,
+        keyvalue1: 24,
         keyname2: "energy in kcal/h",
         keyvalue2: 200,
         keyname3: "flexibility in %",
-        keyvalue3: 3,
+        keyvalue3: 65,
         keyname4: "load capacity in kg",
-        keyvalue4: 4,
+        keyvalue4: 5250,
         keyname5: "fun factor in %",
-        keyvalue5: 12
-    },
+        keyvalue5: 5
+    }
+    //,
 
     // Rickshaw
-    {
-        name: "Rickshaw",
-        imgFile: '../images/dummypic6.png',
-        category: "green side",
-        cardindex: 3,
-        keyname1: "velocity in km/h",
-        keyvalue1: 20,
-        keyname2: "energy in kcal/h",
-        keyvalue2: 120,
-        keyname3: "flexibility in %",
-        keyvalue3: 3,
-        keyname4: "load capacity in kg",
-        keyvalue4: 4,
-        keyname5: "fun factor in %",
-        keyvalue5: 12
-    },
+    // {
+    //     name: "Rickshaw",
+    //     imgFile: '../images/dummypic6.png',
+    //     category: "green side",
+    //     cardindex: 3,
+    //     keyname1: "velocity in km/h",
+    //     keyvalue1: 20,
+    //     keyname2: "energy in kcal/h",
+    //     keyvalue2: 120,
+    //     keyname3: "flexibility in %",
+    //     keyvalue3: 3,
+    //     keyname4: "load capacity in kg",
+    //     keyvalue4: 4,
+    //     keyname5: "fun factor in %",
+    //     keyvalue5: 12
+    // },
 
-    // Cargo bike
-    {
-        name: "Cargo bike",
-        imgFile: '../images/dummypic6.png',
-        category: "green side",
-        cardindex: 3,
-        keyname1: "velocity in km/h",
-        keyvalue1: 14,
-        keyname2: "energy in kcal/h",
-        keyvalue2: 600,
-        keyname3: "flexibility in %",
-        keyvalue3: 80,
-        keyname4: "load capacity in kg",
-        keyvalue4: 120,
-        keyname5: "fun factor in %",
-        keyvalue5: 60
-    }
+    // // Cargo bike
+    // {
+    //     name: "Cargo bike",
+    //     imgFile: '../images/dummypic6.png',
+    //     category: "green side",
+    //     cardindex: 3,
+    //     keyname1: "velocity in km/h",
+    //     keyvalue1: 14,
+    //     keyname2: "energy in kcal/h",
+    //     keyvalue2: 600,
+    //     keyname3: "flexibility in %",
+    //     keyvalue3: 80,
+    //     keyname4: "load capacity in kg",
+    //     keyvalue4: 120,
+    //     keyname5: "fun factor in %",
+    //     keyvalue5: 60
+    // }
 ]

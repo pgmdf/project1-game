@@ -197,10 +197,6 @@ body {
     color: #ffffff00;
 }
 
-.fa-hand-spock {
-    font-size: 1.5em;
-}
-
 .btn-pgmdf-warning {
     background-color: #00000029;
 }
@@ -261,5 +257,18 @@ body {
 
     #score-board-md {
         visibility: visible;
+    }
+
+    .container-card .fa-hand-spock {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-height: 667px) {
+    #card-img {
+        max-height: 25vh;
+        object-fit: cover;
+        object-position: center center;
     }
 }
