@@ -20,7 +20,8 @@
     <h1 class="sr-only">Future Transport Quartet/Card game</h1>
     <!-- START SCREEN - will disappear after button click -->
     <div id="start-screen" class="container d-flex col-12 justify-content-center align-items-center visible">
-        <button id="start-game-button" type="button" class="btn btn-primary">Start game!</button>
+        <button id="start-game-button" type="button" class="btn btn-primary" onclick="playMixing()">Start game!</button>
+        <audio id="card-mixing" src="sounds/card_mixing.mp3"></audio>
     </div>
     <!-- GAME SCREEN -->
     <main class="invisible">
@@ -31,10 +32,9 @@
                         aria-hidden="true"></i></div>
                 <div class="flex-row mt-3 align-items-flexstart">
                     <ol>
-                        <li>Pick a criteria</li>
-                        <li>Submit your choice</li>
-                        <li>Beat your opponent</li>
-                        <li>Choose wisely</li>
+                        <li>Pick a criteria and play that value</li>
+                        <li>Choose wisely and collect as many points</li>
+                        <li>Try to beat the computer</li>
                         <li>Good luck!</li>
                     </ol>
                 </div>
@@ -58,9 +58,10 @@
                     weighing 70kg.</br>Fun factor, flexibility and load capacity are estimates.</br><a
                         href="https://www.tk.de/techniker/magazin/sport/basics/energieverbrauch-kalorienverbrauch-2004664"
                         target="_blank" title="Opens Link to tk.de"><i class="fas fa-link"></i> energy
-                        (tk.de)</a></br><a
-                    href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle" target="_blank"
-                    title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy (foodspring.de)</a>
+                        (tk.de)</a></br><a href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle"
+                        target="_blank" title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy
+                        (foodspring.de)</a></br>
+                        <i class="fas fa-camera-retro    "></i> © pgmdf
                 </p>
             </div>
         </div>
@@ -70,8 +71,8 @@
                 <div id="write-winner" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
 
                 </div>
-                <div id="play-again" class="flex-row align-self-center"><button class="btn btn-outline-light"><i class="fa fa-redo fa-lg pr-3"
-                        aria-hidden="true"></i>New game!</button></div>
+                <div id="play-again" class="flex-row align-self-center"><button class="btn btn-outline-light"><i
+                            class="fa fa-redo fa-lg pr-3" aria-hidden="true"></i>New game!</button></div>
             </div>
         </div>
         <!-- SCORES AND HELP -->
@@ -116,10 +117,9 @@
                             aria-hidden="true"></i></div>
                     <div class="flex-row mt-3 align-items-flexstart">
                         <ol>
-                            <li>Pick a criteria</li>
-                            <li>Submit your choice</li>
-                            <li>Beat your opponent</li>
-                            <li>Choose wisely</li>
+                            <li>Pick a criteria and play that value</li>
+                            <li>Choose wisely and collect as many points</li>
+                            <li>Try to beat the computer</li>
                             <li>Good luck!</li>
                         </ol>
                     </div>
@@ -142,9 +142,10 @@
                             weighing 70kg.</br>Fun factor, flexibility and load capacity are estimates.</br><a
                                 href="https://www.tk.de/techniker/magazin/sport/basics/energieverbrauch-kalorienverbrauch-2004664"
                                 target="_blank" title="Opens Link to tk.de"><i class="fas fa-link"></i> energy
-                                (tk.de)</a></br><a
-                            href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle" target="_blank"
-                            title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy (foodspring.de)</a>
+                                (tk.de)</a></br><a href="https://www.foodspring.de/kalorienverbrauch-tabelle#tabelle"
+                                target="_blank" title="Opens Link to foodspring.de"><i class="fas fa-link"></i> energy
+                                (foodspring.de)</a></br>
+                                <i class="fas fa-camera-retro    "></i> © pgmdf
                         </p>
                     </div>
                 </div>
@@ -155,8 +156,8 @@
                     <div id="write-winner-md" class="flex-row mt-5 pt-5 mb-5 align-items-flexstart">
 
                     </div>
-                    <div id="play-again-md" class="flex-row align-self-center"><button class="btn btn-outline-light"><i class="fa fa-redo fa-lg pr-3"
-                            aria-hidden="true"></i>New game!</button></div>
+                    <div id="play-again-md" class="flex-row align-self-center"><button class="btn btn-outline-light"><i
+                                class="fa fa-redo fa-lg pr-3" aria-hidden="true"></i>New game!</button></div>
                 </div>
             </div>
             <!-- SCOREBOARD LARGER SCREEN -->

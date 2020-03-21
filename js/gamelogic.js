@@ -91,9 +91,9 @@ function checkWinnerKeyValue1() {
     //if (userCards[0].compareAttribute(0) < computerCards[0].compareAttribute(0)) {
     if (userCards[0].keyvalue1 < computerCards[0].keyvalue1) {
         // count score up or down
-        computerScore += 5
+        computerScore += 3
     } else {
-        userScore += 5
+        userScore += 3
     }
     updateMetaGame()
 }
@@ -102,14 +102,26 @@ function checkWinnerKeyValue2() {
     if (userCards[0].keyvalue2 < computerCards[0].keyvalue2) {
         // count score up or down
         computerScore += 3
+        userScore -= 1
     } else {
         userScore += 3
+        computerScore -= 1
     }
     updateMetaGame()
 }
 
 function checkWinnerKeyValue3() {
     if (userCards[0].keyvalue3 < computerCards[0].keyvalue3) {
+        // count score up or down
+        computerScore += 3
+    } else {
+        userScore += 3
+    }
+    updateMetaGame()
+}
+
+function checkWinnerKeyValue4() {
+    if (userCards[0].keyvalue4 < computerCards[0].keyvalue4) {
         // count score up or down
         computerScore += 2
     } else {
@@ -118,24 +130,15 @@ function checkWinnerKeyValue3() {
     updateMetaGame()
 }
 
-function checkWinnerKeyValue4() {
-    if (userCards[0].keyvalue4 < computerCards[0].keyvalue4) {
-        // count score up or down
-        computerScore += 3
-    } else {
-        userScore += 3
-    }
-    updateMetaGame()
-}
 
-
-// TODO: add some random points
 function checkWinnerKeyValue5() {
     if (userCards[0].keyvalue5 < computerCards[0].keyvalue5) {
         // count score up or down
-        computerScore += 3
+        computerScore += Math.floor(Math.random() * 5)
+        userScore += Math.floor(Math.random() * 3)
     } else {
-        userScore += 3
+        userScore += Math.floor(Math.random() * 5)
+        computerScore += Math.floor(Math.random() * 3)
     }
     updateMetaGame()
 }

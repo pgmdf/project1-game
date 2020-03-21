@@ -22,11 +22,11 @@ document.getElementById('start-game-button').onclick = () => {
 
 // display meta-game-information
 function updateMetaGame() {
-        document.getElementById('computer-score').innerText = `${computerScore}`
-        document.getElementById('user-score').innerText = `${userScore}`
-        // larger screens
-        document.getElementById('computer-score-md').innerText = `${computerScore}`
-        document.getElementById('user-score-md').innerText = `${userScore}`
+    document.getElementById('computer-score').innerText = `${computerScore}`
+    document.getElementById('user-score').innerText = `${userScore}`
+    // larger screens
+    document.getElementById('computer-score-md').innerText = `${computerScore}`
+    document.getElementById('user-score-md').innerText = `${userScore}`
 }
 
 // reset meta-game-information
@@ -83,4 +83,17 @@ document.getElementById('play-again-md').onclick = () => {
     document.getElementById("the-winner-is-md").style.height = "0%";
     resetMetaGame()
     pickRandomCards()
+}
+
+
+// play sound at game-start
+function playMixing() {
+    let cardMixing = document.getElementById("card-mixing");
+    cardMixing.playMixing();
+}
+
+// play sound at new card
+function playGiving() {
+    let cardGiving = document.getElementById("card-giving");
+    cardGiving.playGiving();
 }

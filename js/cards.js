@@ -41,10 +41,10 @@ let cardsArray = [
         keyvalue5: 99
     },
 
-    // Walking TODO: change image
+    // Walking
     {
         name: "Walking",
-        imgFile: '../images/dummypic3.png',
+        imgFile: '../images/walking.jpg',
         category: "green side",
         cardindex: 3,
         keyname1: "velocity in km/h",

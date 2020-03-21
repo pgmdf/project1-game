@@ -53,9 +53,9 @@ body {
 }
 
 #sources {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 0.825em;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 #sources .fas {
