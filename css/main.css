@@ -267,8 +267,12 @@ body {
 
 @media only screen and (max-height: 667px) {
     #card-img {
-        max-height: 25vh;
+        max-height: 30vh;
         object-fit: cover;
         object-position: center center;
+    }
+
+    #card-name {
+        font-size: 1em;
     }
 }
