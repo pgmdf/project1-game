@@ -46,22 +46,27 @@ document.getElementById('key-value-submit').onclick = () => {
     if (clickedButton == "key-value-1") {
       checkWinnerKeyValue1();
       document.getElementById('key-value-1').className = "btn btn-pgmdf mt-1 mb-1"
+      clickedButton = " "
     }
     if (clickedButton == "key-value-2") {
       checkWinnerKeyValue2();
       document.getElementById('key-value-2').className = "btn btn-pgmdf mt-1 mb-1"
+      clickedButton = " "
     }
     if (clickedButton == "key-value-3") {
       checkWinnerKeyValue3();
       document.getElementById('key-value-3').className = "btn btn-pgmdf mt-1 mb-1"
+      clickedButton = " "
     }
     if (clickedButton == "key-value-4") {
       checkWinnerKeyValue4();
       document.getElementById('key-value-4').className = "btn btn-pgmdf mt-1 mb-1"
+      clickedButton = " "
     }
     if (clickedButton == "key-value-5") {
       checkWinnerKeyValue5();
       document.getElementById('key-value-5').className = "btn btn-pgmdf mt-1 mb-1"
+      clickedButton = " "
     }
 
     // GAMELOGIC: remove played cards  

@@ -54,7 +54,7 @@ body {
 
 #sources {
     padding-top: 2em;
-    font-size: 0.5em;
+    font-size: 0.825em;
     line-height: 2;
 }
 
@@ -116,7 +116,6 @@ body {
     padding-bottom: 0.25em;
     margin-top: -2.25em;
     background: rgb(217, 80, 50);
-    /* background: linear-gradient(0deg, rgba(217, 80, 50, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     z-index: 10;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -124,29 +123,13 @@ body {
 
 .user-score {
     color: rgb(147, 146, 146);
-    /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
-    /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
     font-size: 1em;
     transition: all 1s ease;
 }
 
 .computer-score {
     color: rgb(147, 146, 146);
-    /* text-shadow: 3px 3px 0 #EEEEEE, 5px 5px 0 #707070; */
-    /* text-shadow: 0px 1px #707070, 1px 0px #707070, -1px 0px #707070, 0px -1px #707070; */
     font-size: 1em;
-    transition: all 1s ease;
-}
-
-.score-up {
-    color: green;
-    font-size: 4em;
-    transition: all 1s ease;
-}
-
-.score-down {
-    color: red;
-    font-size: 0.5em;
     transition: all 1s ease;
 }
 
