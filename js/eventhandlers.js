@@ -41,37 +41,40 @@ for (let i = 0; i < btns.length; i++) {
 // submit your choice and play the game aka call the functions
 document.getElementById('key-value-submit').onclick = () => {
 
-  if (clickedButton == "key-value-1") {
-    checkWinnerKeyValue1();
-    document.getElementById('key-value-1').className = "btn btn-pgmdf mt-1 mb-1"
-  }
-  if (clickedButton == "key-value-2") {
-    checkWinnerKeyValue2();
-    document.getElementById('key-value-2').className = "btn btn-pgmdf mt-1 mb-1"
-  }
-  if (clickedButton == "key-value-3") {
-    checkWinnerKeyValue3();
-    document.getElementById('key-value-3').className = "btn btn-pgmdf mt-1 mb-1"
-  }
-  if (clickedButton == "key-value-4") {
-    checkWinnerKeyValue4();
-    document.getElementById('key-value-4').className = "btn btn-pgmdf mt-1 mb-1"
-  }
-  if (clickedButton == "key-value-5") {
-    checkWinnerKeyValue5();
-    document.getElementById('key-value-5').className = "btn btn-pgmdf mt-1 mb-1"
+  if (clickedButton != " ") {
+
+    if (clickedButton == "key-value-1") {
+      checkWinnerKeyValue1();
+      document.getElementById('key-value-1').className = "btn btn-pgmdf mt-1 mb-1"
+    }
+    if (clickedButton == "key-value-2") {
+      checkWinnerKeyValue2();
+      document.getElementById('key-value-2').className = "btn btn-pgmdf mt-1 mb-1"
+    }
+    if (clickedButton == "key-value-3") {
+      checkWinnerKeyValue3();
+      document.getElementById('key-value-3').className = "btn btn-pgmdf mt-1 mb-1"
+    }
+    if (clickedButton == "key-value-4") {
+      checkWinnerKeyValue4();
+      document.getElementById('key-value-4').className = "btn btn-pgmdf mt-1 mb-1"
+    }
+    if (clickedButton == "key-value-5") {
+      checkWinnerKeyValue5();
+      document.getElementById('key-value-5').className = "btn btn-pgmdf mt-1 mb-1"
+    }
+
+    // GAMELOGIC: remove played cards  
+    userCards.shift()
+    computerCards.shift()
+
+    // GAMELOGIC: reset submit-button 
+    document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
+
+    // URGENT: Don't place the function outside if condition
+    playTilTheEnd()
   }
 
-  // GAMELOGIC: remove played cards  
-  userCards.shift()
-  computerCards.shift()
-
-  // GAMELOGIC: reset submit-button 
-  document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
-
-// TODO: add condition that at least one value has to be chosen!!!
-
-  playTilTheEnd()
   // TODO: check which radio button is active
   // if (document.getElementById("inlineRadioBestOfFive").checked = true) {
   //   playBestOfFive()
