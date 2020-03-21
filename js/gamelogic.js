@@ -88,7 +88,6 @@ function pickRandomCards() {
 
 // winner functions
 function checkWinnerKeyValue1() {
-    console.log(userCards[0])
     //if (userCards[0].compareAttribute(0) < computerCards[0].compareAttribute(0)) {
     if (userCards[0].keyvalue1 < computerCards[0].keyvalue1) {
         // count score up or down
@@ -102,15 +101,9 @@ function checkWinnerKeyValue1() {
 function checkWinnerKeyValue2() {
     if (userCards[0].keyvalue2 < computerCards[0].keyvalue2) {
         // count score up or down
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 3
-        document.getElementsByClassName('computer-score')[0].classList.remove('score-up')
     } else {
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 3
-        document.getElementsByClassName('user-score')[0].classList.remove('score-up')
     }
     updateMetaGame()
 }
@@ -118,15 +111,9 @@ function checkWinnerKeyValue2() {
 function checkWinnerKeyValue3() {
     if (userCards[0].keyvalue3 < computerCards[0].keyvalue3) {
         // count score up or down
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 2
-        document.getElementsByClassName('computer-score')[0].classList.remove('score-up')
     } else {
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 2
-        document.getElementsByClassName('user-score')[0].classList.remove('score-up')
     }
     updateMetaGame()
 }
@@ -134,15 +121,9 @@ function checkWinnerKeyValue3() {
 function checkWinnerKeyValue4() {
     if (userCards[0].keyvalue4 < computerCards[0].keyvalue4) {
         // count score up or down
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 3
-        document.getElementsByClassName('computer-score')[0].classList.remove('score-up')
     } else {
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 3
-        document.getElementsByClassName('user-score')[0].classList.remove('score-up')
     }
     updateMetaGame()
 }
@@ -152,15 +133,9 @@ function checkWinnerKeyValue4() {
 function checkWinnerKeyValue5() {
     if (userCards[0].keyvalue5 < computerCards[0].keyvalue5) {
         // count score up or down
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('computer-score')[0].classList.add('score-up')
         computerScore += 3
-        document.getElementsByClassName('computer-score')[0].classList.remove('score-up')
     } else {
-        // TODO: end of transition needed; test for transition - adding transition
-        document.getElementsByClassName('user-score')[0].classList.add('score-up')
         userScore += 3
-        document.getElementsByClassName('user-score')[0].classList.remove('score-up')
     }
     updateMetaGame()
 }

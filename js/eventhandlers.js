@@ -42,27 +42,22 @@ for (let i = 0; i < btns.length; i++) {
 document.getElementById('key-value-submit').onclick = () => {
 
   if (clickedButton == "key-value-1") {
-    document.getElementById('key-value-1').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue1();
     document.getElementById('key-value-1').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-2") {
-    document.getElementById('key-value-2').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue2();
     document.getElementById('key-value-2').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-3") {
-    document.getElementById('key-value-3').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue3();
     document.getElementById('key-value-3').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-4") {
-    document.getElementById('key-value-4').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue4();
     document.getElementById('key-value-4').className = "btn btn-pgmdf mt-1 mb-1"
   }
   if (clickedButton == "key-value-5") {
-    document.getElementById('key-value-5').className = "btn btn-outline-secondary mt-1 mb-1"
     checkWinnerKeyValue5();
     document.getElementById('key-value-5').className = "btn btn-pgmdf mt-1 mb-1"
   }
@@ -74,65 +69,68 @@ document.getElementById('key-value-submit').onclick = () => {
   // GAMELOGIC: reset submit-button 
   document.getElementById('key-value-submit').className = "btn btn-pgmdf-warning mt-1 mb-1"
 
+// TODO: add condition that at least one value has to be chosen!!!
 
+  playTilTheEnd()
   // TODO: check which radio button is active
-  if (document.getElementById("inlineRadioBestOfFive").checked = true) {
-    playBestOfFive()
-  }
-  if (document.getElementById("inlineRadioTilTheEnd").checked = true) {
-    playTilTheEnd()
-  }
+  // if (document.getElementById("inlineRadioBestOfFive").checked = true) {
+  //   playBestOfFive()
+  // }
+  // if (document.getElementById("inlineRadioTilTheEnd").checked = true) {
+  //   playTilTheEnd()
+  // }
 };
 
 
-// mode: best-of five
-function playBestOfFive() {
-  if (userCards.length >= 5) {
-    startGame()
-  } else {
-    // computer wins
-    if (userScore > computerScore && window.screen.width <= 767) {
-      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is").style.height = "100%"
-      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
-    }
-    // lager screens user wins
-    if (userScore > computerScore && window.screen.width >= 768) {
-      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is-md").style.height = "100%"
-      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
-    }
-    // user wins
-    if (userScore < computerScore && window.screen.width <= 767) {
-      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is").style.height = "100%"
-      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
-    }
-    // larger screens user wins
-    if (userScore < computerScore && window.screen.width >= 768) {
-      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is-md").style.height = "100%"
-      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
-    }
-    // both are equal
-    if (userScore == computerScore && window.screen.width <= 767) {
-      document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is").style.height = "100%"
-      document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
-    }
-    // larger screens both are equal
-    if (userScore == computerScore && window.screen.width >= 768) {
-      document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
-      document.getElementById("the-winner-is-md").style.height = "100%"
-      document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
-    }
-  }
-}
+// mode: best-of five - doesn't make sense as long as there are just 14 cards in total
+// function playBestOfFive() {
+//   // set from 5 to 3 to not let all cards be played at first sight and to force closer results
+//   if (userCards.length >= 5) {
+//     startGame()
+//   } else {
+//     // computer wins
+//     if (userScore > computerScore && window.screen.width <= 767) {
+//       document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is").style.height = "100%"
+//       document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
+//     }
+//     // lager screens user wins
+//     if (userScore > computerScore && window.screen.width >= 768) {
+//       document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is-md").style.height = "100%"
+//       document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Congratulations, you win!";
+//     }
+//     // user wins
+//     if (userScore < computerScore && window.screen.width <= 767) {
+//       document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is").style.height = "100%"
+//       document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
+//     }
+//     // larger screens user wins
+//     if (userScore < computerScore && window.screen.width >= 768) {
+//       document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is-md").style.height = "100%"
+//       document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "Computer wins, better try next time!"
+//     }
+//     // both are equal
+//     if (userScore == computerScore && window.screen.width <= 767) {
+//       document.getElementById("the-winner-is").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is").style.height = "100%"
+//       document.getElementById("write-winner").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
+//     }
+//     // larger screens both are equal
+//     if (userScore == computerScore && window.screen.width >= 768) {
+//       document.getElementById("the-winner-is-md").style.transitionDelay = "0.5s"
+//       document.getElementById("the-winner-is-md").style.height = "100%"
+//       document.getElementById("write-winner-md").innerHTML = `${userScore}` + " - " + `${computerScore}` + '</br>' + "You both are winners - ride on!"
+//     }
+//   }
+// }
 
 
-// mode: til the end
+// mode: til the end - actually aka BestOfThree
 function playTilTheEnd() {
-  if (userCards.length > 0) {
+  if (userCards.length > 4) {
     startGame()
   } else {
     // computer wins
