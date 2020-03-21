@@ -197,8 +197,8 @@ body {
 @media only screen and (min-width: 768px) {
     body {
         margin-top: 1.5em;
-        font-size: 2em;
-        line-height: 1.5;
+        /* font-size: 2em;
+        line-height: 1.5; */
     }
 
     #start-screen {
@@ -213,7 +213,7 @@ body {
         right: 0;
     }
 
-    #card-name {
+    /* #card-name {
         font-size: 1em;
     }
 
@@ -227,10 +227,10 @@ body {
 
     .computer-score {
         font-size: 1em;
-    }
+    } */
 
     #write-winner-md {
-        font-size: 2em;
+        /* font-size: 2em; */
         text-align: center;
         background: none repeat scroll 0 0 #d95032;
         color: rgb(255, 130, 130);
@@ -242,9 +242,9 @@ body {
         visibility: visible;
     }
 
-    .container-card .fa-hand-spock {
+    /* .container-card .fa-hand-spock {
         font-size: 1.5em;
-    }
+    } */
 
 }
 

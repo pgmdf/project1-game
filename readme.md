@@ -31,6 +31,7 @@ The first project in the Ironhack WebDevPT course should be a game. I decided to
 4. never underestimate research (data, pictures, …)
 5. try to hit the ground running as fast as possible
 6. ask family and friends to test - "learned" UX/UI could be a surprise 
+7. You shouldn't been testing and developing with your browser scaled to 75%!!!
 
 - Github Projects is a good alternative to any projectmanagement-tool (like trello) - but it doesn't make sense to play the role of the developer and the pm at the same time
 - Adobe Capture (mobile app) is great for saving your inspirations
